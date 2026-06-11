@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flutist</title>
+  <title>Tsai Jian-Wei | Flutist</title>
 
-  <!-- 字體 -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -15,79 +14,143 @@
     }
 
     body {
-      font-family: 'Playfair Display', serif;
+      background: #070b12;
       color: white;
     }
 
-    /* Hero區 */
     .hero {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1507838153414-b4b713384a76') no-repeat center/cover;
+      min-height: 100vh;
+      background:
+        linear-gradient(to right, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.55) 38%, rgba(0,0,0,0.12) 75%),
+        url("hero.jpg") no-repeat center center / cover;
       position: relative;
+      overflow: hidden;
     }
 
-    /* 黑色遮罩 */
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9));
-    }
-
-    /* 文字置中 */
-    .hero-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 1;
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      letter-spacing: 2px;
-    }
-
-    .hero p {
-      margin-top: 15px;
-      font-size: 18px;
-      letter-spacing: 3px;
-    }
-
-    /* 導覽列 */
     nav {
       position: absolute;
       top: 0;
       width: 100%;
-      padding: 20px 50px;
+      padding: 28px 60px;
       display: flex;
       justify-content: center;
+      gap: 48px;
       z-index: 2;
+      font-family: 'Montserrat', sans-serif;
     }
 
     nav a {
-      margin: 0 20px;
       color: white;
       text-decoration: none;
-      font-size: 14px;
-      letter-spacing: 2px;
+      font-size: 12px;
+      letter-spacing: 3px;
+      opacity: 0.85;
     }
 
     nav a:hover {
+      opacity: 1;
       border-bottom: 1px solid white;
+      padding-bottom: 6px;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 8%;
+      transform: translateY(-50%);
+      max-width: 520px;
+      animation: fadeUp 1.6s ease forwards;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+      line-height: 1.05;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+    }
+
+    .hero .subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero .line {
+      width: 70px;
+      height: 1px;
+      background: white;
+      margin-bottom: 28px;
+      opacity: 0.75;
+    }
+
+    .hero .intro {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      line-height: 1.9;
+      letter-spacing: 1px;
+      opacity: 0.82;
+      margin-bottom: 34px;
+    }
+
+    .button {
+      font-family: 'Montserrat', sans-serif;
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.7);
+      padding: 13px 28px;
+      letter-spacing: 3px;
+      font-size: 12px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: white;
+      color: #070b12;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(-42%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        gap: 22px;
+        padding: 24px 20px;
+      }
+
+      .hero {
+        background:
+          linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.9)),
+          url("hero.jpg") no-repeat center center / cover;
+      }
+
+      .hero-content {
+        left: 7%;
+        right: 7%;
+        top: 62%;
+      }
+
+      .hero h1 {
+        font-size: 46px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="hero">
-
-    <!-- 導覽 -->
+  <section class="hero">
     <nav>
       <a href="#">HOME</a>
       <a href="#">ABOUT</a>
@@ -95,13 +158,16 @@
       <a href="#">CONTACT</a>
     </nav>
 
-    <!-- 中間文字 -->
     <div class="hero-content">
-      <h1>YOUR NAME</h1>
-      <p>FLUTIST | DMA (GERMANY)</p>
+      <h1>TSAI<br>JIAN-WEI</h1>
+      <div class="subtitle">Flutist · Performer · Educator</div>
+      <div class="line"></div>
+      <div class="intro">
+        Germany-trained flutist dedicated to refined artistry, expressive performance, and musical education.
+      </div>
+      <a class="button" href="#">EXPLORE</a>
     </div>
-
-  </div>
+  </section>
 
 </body>
 </html>
