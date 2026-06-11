@@ -291,108 +291,102 @@
       }
     }
     .education-section{
-        background:#070b12;
-    
-        padding:120px 10%;
-    
-        color:white;
+      background:#070b12;
+      padding:120px 10%;
+      color:white;
     }
     
     .education-header{
-        text-align:center;
-        margin-bottom:60px;
+      text-align:center;
+      margin-bottom:70px;
     }
     
     .education-header h2{
-        font-family:'Noto Serif TC', serif;
-    
-        font-size:42px;
-    
-        margin-bottom:20px;
+      font-family:'Noto Serif TC', serif;
+      font-size:42px;
+      margin-bottom:20px;
     }
     
     .education-header p{
-        opacity:.75;
+      opacity:.75;
+      letter-spacing:1px;
     }
     
     .edu-card{
+      max-width:820px;
+      margin:auto;
+      padding:70px 80px;
+      text-align:center;
     
-        max-width:700px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
     
-        margin:auto;
+      border:1px solid rgba(255,255,255,.11);
+      box-shadow:0 30px 90px rgba(0,0,0,.42);
     
-        background:rgba(255,255,255,.03);
+      position:relative;
+      overflow:hidden;
+      transition:.45s ease;
+    }
     
-        border:1px solid rgba(255,255,255,.08);
-    
-        padding:60px;
-    
-        text-align:center;
-    
-        transition:.4s;
-    
-        box-shadow:
-        0 20px 50px rgba(0,0,0,.25);
+    .edu-card::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:50%;
+      transform:translateX(-50%);
+      width:46%;
+      height:1px;
+      background:linear-gradient(to right, transparent, rgba(211,180,118,.9), transparent);
     }
     
     .edu-card:hover{
-    
-        transform:translateY(-10px);
-    
-        border-color:
-        rgba(255,255,255,.25);
-    
-        box-shadow:
-        0 30px 80px rgba(0,0,0,.4);
+      transform:translateY(-8px);
+      border-color:rgba(211,180,118,.34);
+      box-shadow:0 40px 110px rgba(0,0,0,.58);
     }
     
-    .edu-icon{
+    .edu-location{
+      font-family:'Montserrat', sans-serif;
+      font-size:11px;
+      letter-spacing:4px;
+      color:rgba(211,180,118,.85);
+      margin-bottom:22px;
+    }
     
-        font-size:48px;
-    
-        margin-bottom:20px;
+    .edu-gold-line{
+      width:56px;
+      height:1px;
+      background:rgba(211,180,118,.75);
+      margin:0 auto 34px;
     }
     
     .edu-card h3{
-    
-        font-family:'Noto Serif TC', serif;
-    
-        font-size:30px;
-    
-        margin-bottom:15px;
+      font-family:'Noto Serif TC', serif;
+      font-size:30px;
+      margin-bottom:18px;
+      letter-spacing:1px;
     }
     
     .school-name{
-        opacity:.65;
-        margin-bottom:28px;
-        letter-spacing:1px;
-        font-size:22px;
-        line-height:1.6;
-        max-width:620px;
-        margin-left:auto;
-        margin-right:auto;
+      font-family:'Playfair Display', serif;
+      font-size:27px;
+      line-height:1.5;
+      opacity:.62;
+      margin-bottom:40px;
     }
     
     .degree{
-    
-        font-size:26px;
-    
-        font-weight:600;
-    
-        margin-bottom:10px;
+      font-family:'Playfair Display', serif;
+      font-size:30px;
+      font-weight:600;
+      margin-bottom:14px;
     }
     
-    .degree{
-        font-size:24px;
-        font-weight:600;
-        margin-bottom:18px;
-    }
-
     .degree-note{
-        font-size:16px;
-        opacity:.65;
-        line-height:1.8;
-        letter-spacing:1px;
+      font-size:16px;
+      opacity:.62;
+      letter-spacing:2px;
     }
     
     @media (max-width: 768px) {
@@ -563,33 +557,30 @@
       EDUCATION
     </div>
 
+    <section class="education-section" id="education">
+  <div class="education-header">
+    <div class="section-tag">EDUCATION</div>
     <h2>音樂歷程</h2>
-
-    <p>
-      德國音樂教育體系的專業養成與藝術淬鍊。
-    </p>
-
+    <p>德國音樂教育體系的專業養成與藝術淬鍊。</p>
   </div>
 
   <div class="edu-card">
+    <div class="edu-location">TROSSINGEN · GERMANY</div>
+    <div class="edu-gold-line"></div>
 
-    <div class="edu-icon">
-
-    <h3>
-      德國國立特羅辛根高等音樂院
-    </h3>
+    <h3>德國國立特羅辛根高等音樂院</h3>
 
     <div class="school-name">
       Staatliche Hochschule für Musik Trossingen
     </div>
 
-    <div class="degree">
-      Konzertexamen
-    </div>
-  
+    <div class="degree">Konzertexamen</div>
+
     <div class="degree-note">
       最高演奏家文憑
     </div>
+  </div>
+</section>
 
   </div>
 
