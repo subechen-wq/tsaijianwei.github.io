@@ -33,8 +33,12 @@
         url("hero.jpg");
     
       background-repeat: no-repeat;
-      background-size: 92%;
-      background-position: 82% center;
+    
+      /* 改回 cover，避免左邊露出 gap */
+      background-size: cover;
+    
+      /* 保留照片偏右、稍微下移 */
+      background-position: 82% 60%;
     
       position: relative;
       overflow: hidden;
@@ -779,7 +783,7 @@
     </div>
   </section>
 
-<section class="about-section">
+<section class="about-section" id="about">
 
   <div class="about-image">
     <img src="about.jpg" alt="蔡建緯">
