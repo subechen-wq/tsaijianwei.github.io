@@ -271,6 +271,17 @@
       opacity: .82;
       letter-spacing: .6px;
     }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: 1s ease;
+    }
+    
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
     
     @media(max-width:900px) {
 
@@ -825,11 +836,11 @@
 
 <section class="about-section" id="about">
 
-  <div class="about-image">
+  <div class="about-content reveal">
     <img src="about.jpg" alt="蔡建緯長笛演奏家">
   </div>
 
-  <div class="about-content">
+  <div class="about-content reveal">
 
     <div class="section-tag">ARTIST PROFILE</div>
 
@@ -997,19 +1008,28 @@
 </section> 
 
 <script>
-
 window.addEventListener("scroll", function(){
 
-    const navbar =
-    document.querySelector(".navbar");
+  const navbar = document.querySelector(".navbar");
 
-    navbar.classList.toggle(
-        "scrolled",
-        window.scrollY > 80
-    );
+  navbar.classList.toggle(
+    "scrolled",
+    window.scrollY > 80
+  );
+
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach(function(reveal){
+    const windowHeight = window.innerHeight;
+    const revealTop = reveal.getBoundingClientRect().top;
+    const revealPoint = 120;
+
+    if(revealTop < windowHeight - revealPoint){
+      reveal.classList.add("active");
+    }
+  });
 
 });
-
 </script>
   
 </body>
