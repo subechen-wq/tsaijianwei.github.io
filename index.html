@@ -19,27 +19,22 @@
       font-family: 'Noto Serif TC', 'Playfair Display', serif;
     }
 
-    .hero {
-      min-height: 100vh;
+    .hero{
+        min-height:100vh;
     
-      background:
+        background:
         linear-gradient(
           to right,
-          rgba(0,0,0,0.9) 0%,
-          rgba(0,0,0,0.6) 36%,
-          rgba(0,0,0,0.16) 72%,
-          rgba(0,0,0,0.28) 100%
+          rgba(0,0,0,.92) 0%,
+          rgba(0,0,0,.65) 35%,
+          rgba(0,0,0,.18) 72%
         ),
         url("hero.jpg");
     
-      background-repeat: no-repeat;
-      background-size: cover;
+        background-size:cover;
+        background-repeat:no-repeat;
     
-      /* 讓人物不要太貼上方，也不要被 navbar 壓住 */
-      background-position: 72% 62%;
-    
-      position: relative;
-      overflow: hidden;
+        background-position: 82% center;
     }
     
     /* 歐洲古典風：不要毛玻璃，改成薄暗幕 */
@@ -89,6 +84,12 @@
     .logo:hover {
       opacity: .8;
     }
+
+    .logo span{
+        font-size:10px;
+        letter-spacing:4px;
+        color:rgba(211,180,118,.7);
+    }
     
     .navbar a {
       color: rgba(255,255,255,.86);
@@ -106,7 +107,7 @@
 
     .hero-content {
       position: absolute;
-      top: 50%;
+      top: 56%;
       left: 8%;
       transform: translateY(-50%);
       max-width: 520px;
@@ -601,7 +602,9 @@
     .logo{
         font-family:'Playfair Display', serif;
     
-        font-size:34px;
+        font-size:28px;
+
+        line-height:1.1;
     
         font-weight:600;
     
@@ -704,7 +707,8 @@
     <nav class="navbar">
 
         <div class="logo">
-            JWT
+            JWT<br>
+            <span>FLUTIST</span>
         </div>
     
         <ul>
