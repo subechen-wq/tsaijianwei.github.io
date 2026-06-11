@@ -189,66 +189,105 @@
         transform: translateY(-50%);
       }
     }
-    .about-section{
-        background:#0a0a0a;
-        color:white;
+    .about-section {
+      background:
+        linear-gradient(
+          135deg,
+          #05070c 0%,
+          #090d14 45%,
+          #05070c 100%
+        );
     
-        display:flex;
-        align-items:center;
-        gap:80px;
+      color: white;
     
-        padding:120px 10%;
+      display: flex;
+      align-items: center;
+      gap: 90px;
+    
+      padding: 140px 10%;
     }
     
-    .about-image{
-        flex:1;
+    .about-image {
+      flex: 0.9;
     }
     
-    .about-image img{
-        width:100%;
-        max-width:450px;
+    .about-image img {
+      width: 100%;
+      max-width: 430px;
+      display: block;
+      border-radius: 3px;
     
-        display:block;
-    
-        border-radius:4px;
-    
-        box-shadow:
-        0 20px 60px rgba(0,0,0,.4);
+      box-shadow:
+        0 30px 90px rgba(0,0,0,.55);
     }
     
-    .about-content{
-        flex:1;
+    .about-content {
+      flex: 1.1;
+      max-width: 660px;
     }
     
-    .section-tag{
-        letter-spacing:4px;
-        font-size:12px;
-        opacity:.6;
-        margin-bottom:15px;
+    .section-tag {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 6px;
+      font-size: 11px;
+      color: rgba(211,180,118,.78);
+      margin-bottom: 20px;
     }
     
-    .about-content h2{
-        font-size:48px;
-        margin-bottom:30px;
-        font-family:'Noto Serif TC';
+    .about-content h2 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 46px;
+      margin-bottom: 34px;
+      letter-spacing: 1px;
     }
     
-    .about-content p{
-        line-height:2;
-        margin-bottom:20px;
-        opacity:.85;
+    .about-highlight {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-bottom: 38px;
     }
     
-    @media(max-width:900px){
+    .about-highlight div {
+      border-top: 1px solid rgba(211,180,118,.55);
+      padding-top: 16px;
     
-    .about-section{
-        flex-direction:column;
-        text-align:center;
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(255,255,255,.72);
     }
     
-    .about-image img{
-        margin:auto;
+    .about-highlight span {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: #d3b476;
+      margin-bottom: 4px;
     }
+    
+    .about-content p {
+      line-height: 2.1;
+      margin-bottom: 22px;
+      opacity: .82;
+      letter-spacing: .6px;
+    }
+    
+    @media(max-width:900px) {
+
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 8%;
+        gap: 50px;
+      }
+    
+      .about-image img {
+        margin: auto;
+      }
+    
+      .about-highlight {
+        grid-template-columns: 1fr;
+      }
     
     }
     .about-image {
@@ -787,16 +826,26 @@
 <section class="about-section" id="about">
 
   <div class="about-image">
-    <img src="about.jpg" alt="蔡建緯">
+    <img src="about.jpg" alt="蔡建緯長笛演奏家">
   </div>
 
   <div class="about-content">
 
-    <div class="section-tag">
-      ABOUT
-    </div>
+    <div class="section-tag">ARTIST PROFILE</div>
 
     <h2>關於藝術家</h2>
+
+    <div class="about-highlight">
+      <div>
+        <span>Konzertexamen</span>
+        最高演奏家文憑
+      </div>
+
+      <div>
+        <span>Germany</span>
+        德國音樂院專業養成
+      </div>
+    </div>
 
     <p>
       蔡建緯為旅德長笛演奏家，畢業於德國國立特羅辛根高等音樂院
