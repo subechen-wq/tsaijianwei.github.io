@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flutist</title>
+
+  <!-- 字體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      color: white;
+    }
+
+    /* Hero區 */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1507838153414-b4b713384a76') no-repeat center/cover;
+      position: relative;
+    }
+
+    /* 黑色遮罩 */
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9));
+    }
+
+    /* 文字置中 */
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+
+    /* 導覽列 */
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    nav a {
+      margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <!-- 導覽 -->
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">MEDIA</a>
+      <a href="#">CONTACT</a>
+    </nav>
+
+    <!-- 中間文字 -->
+    <div class="hero-content">
+      <h1>YOUR NAME</h1>
+      <p>FLUTIST | DMA (GERMANY)</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
