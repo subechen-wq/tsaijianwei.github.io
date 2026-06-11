@@ -547,6 +547,20 @@
       opacity:.35;
       font-size:13px;
     }
+
+    .logo{
+        font-family:'Playfair Display', serif;
+        font-size:30px;
+        font-weight:600;
+        color:#d3b476;
+        letter-spacing:4px;
+        cursor:pointer;
+        transition:.3s;
+    }
+    
+    .logo:hover{
+        opacity:.8;
+    }
     
     @media (max-width: 768px) {
       nav {
@@ -631,11 +645,21 @@
 <body>
 
   <section class="hero">
-    <nav>
-      <a href="#">首頁</a>
-      <a href="#">關於</a>
-      <a href="#">影音作品</a>
-      <a href="#">聯絡邀約</a>
+    <nav class="navbar">
+
+        <div class="logo">
+            JWT
+        </div>
+    
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#about">關於</a></li>
+            <li><a href="#media">影音作品</a></li>
+            <li><a href="#education">音樂歷程</a></li>
+            <li><a href="#teaching">長笛課程</a></li>
+            <li><a href="#contact">聯絡邀約</a></li>
+        </ul>
+    
     </nav>
 
     <div class="hero-content">
