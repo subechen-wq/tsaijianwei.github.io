@@ -388,6 +388,81 @@
       opacity:.62;
       letter-spacing:2px;
     }
+
+    .teaching-section{
+      background:#0a0f18;
+      color:white;
+      padding:120px 10%;
+    }
+    
+    .teaching-header{
+      text-align:center;
+      margin-bottom:70px;
+    }
+    
+    .teaching-header h2{
+      font-family:'Noto Serif TC', serif;
+      font-size:42px;
+      margin-bottom:20px;
+    }
+    
+    .teaching-header p{
+      opacity:.75;
+      letter-spacing:1px;
+    }
+    
+    .teaching-grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:28px;
+      max-width:1000px;
+      margin:auto;
+    }
+    
+    .teaching-card{
+      background:linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
+      border:1px solid rgba(255,255,255,.1);
+      padding:42px;
+      transition:.4s ease;
+      position:relative;
+      overflow:hidden;
+    }
+    
+    .teaching-card::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:1px;
+      background:linear-gradient(to right, rgba(211,180,118,.8), transparent);
+    }
+    
+    .teaching-card:hover{
+      transform:translateY(-8px);
+      border-color:rgba(211,180,118,.35);
+      box-shadow:0 30px 80px rgba(0,0,0,.45);
+    }
+    
+    .teaching-number{
+      color:rgba(211,180,118,.85);
+      font-family:'Playfair Display', serif;
+      font-size:18px;
+      margin-bottom:24px;
+      letter-spacing:2px;
+    }
+    
+    .teaching-card h3{
+      font-family:'Noto Serif TC', serif;
+      font-size:28px;
+      margin-bottom:18px;
+    }
+    
+    .teaching-card p{
+      opacity:.72;
+      line-height:1.9;
+      letter-spacing:.6px;
+    }
     
     @media (max-width: 768px) {
       nav {
@@ -573,6 +648,42 @@
     <div class="degree-note">
       最高演奏家文憑
     </div>
+  </div>
+</section>
+
+  <section class="teaching-section" id="teaching">
+  <div class="teaching-header">
+    <div class="section-tag">TEACHING</div>
+    <h2>長笛課程</h2>
+    <p>依據學生程度與目標，提供個別化的長笛學習指導。</p>
+  </div>
+
+  <div class="teaching-grid">
+
+    <div class="teaching-card">
+      <div class="teaching-number">01</div>
+      <h3>升學輔導</h3>
+      <p>音樂班、音樂系升學準備，包含曲目規劃、技巧訓練與考試策略。</p>
+    </div>
+
+    <div class="teaching-card">
+      <div class="teaching-number">02</div>
+      <h3>興趣培養</h3>
+      <p>適合初學者、成人學習者，建立穩定基礎與音樂感受力。</p>
+    </div>
+
+    <div class="teaching-card">
+      <div class="teaching-number">03</div>
+      <h3>進階演奏</h3>
+      <p>針對音色、樂句、詮釋與舞台表現進行更深入的演奏訓練。</p>
+    </div>
+
+    <div class="teaching-card">
+      <div class="teaching-number">04</div>
+      <h3>德國音樂院申請</h3>
+      <p>協助準備留學考試曲目、作品詮釋與申請方向規劃。</p>
+    </div>
+
   </div>
 </section>
 
