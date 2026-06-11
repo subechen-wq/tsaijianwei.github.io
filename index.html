@@ -123,7 +123,68 @@
         transform: translateY(-50%);
       }
     }
-
+    .about-section{
+        background:#0a0a0a;
+        color:white;
+    
+        display:flex;
+        align-items:center;
+        gap:80px;
+    
+        padding:120px 10%;
+    }
+    
+    .about-image{
+        flex:1;
+    }
+    
+    .about-image img{
+        width:100%;
+        max-width:450px;
+    
+        display:block;
+    
+        border-radius:4px;
+    
+        box-shadow:
+        0 20px 60px rgba(0,0,0,.4);
+    }
+    
+    .about-content{
+        flex:1;
+    }
+    
+    .section-tag{
+        letter-spacing:4px;
+        font-size:12px;
+        opacity:.6;
+        margin-bottom:15px;
+    }
+    
+    .about-content h2{
+        font-size:48px;
+        margin-bottom:30px;
+        font-family:'Noto Serif TC';
+    }
+    
+    .about-content p{
+        line-height:2;
+        margin-bottom:20px;
+        opacity:.85;
+    }
+    
+    @media(max-width:900px){
+    
+    .about-section{
+        flex-direction:column;
+        text-align:center;
+    }
+    
+    .about-image img{
+        margin:auto;
+    }
+    
+    }
     @media (max-width: 768px) {
       nav {
         gap: 22px;
@@ -226,17 +287,38 @@
     </div>
   </section>
 
-<section class="about-preview">
-  <div class="about-inner">
-    <div class="about-label">關於</div>
-    <h2>藝術家簡介</h2>
-    <p>
-      蔡建瑋為留德長笛博士，長年專注於長笛演奏、音樂教育與古典音樂推廣。
-      其音樂風格融合歐洲古典訓練的嚴謹基礎與細膩真摯的個人詮釋，
-      期望透過演出與教學，將長笛音樂的美感傳遞給更多聽眾與學習者。
-    </p>
-    <a class="text-link" href="#">閱讀更多</a>
+<section class="about-section">
+
+  <div class="about-image">
+    <img src="about.jpg" alt="蔡建瑋">
   </div>
+
+  <div class="about-content">
+
+    <div class="section-tag">
+      ABOUT
+    </div>
+
+    <h2>關於藝術家</h2>
+
+    <p>
+      蔡建瑋為旅德長笛演奏家，畢業於德國國立特羅辛根高等音樂院
+      （Staatliche Hochschule für Musik Trossingen），
+      取得最高演奏家文憑（Konzertexamen）。
+    </p>
+
+    <p>
+      長期接受德國音樂教育體系訓練，其演奏風格兼具歐洲古典音樂傳統的嚴謹與細膩，
+      並重視音樂作品的情感表達與藝術深度。
+    </p>
+
+    <p>
+      透過演出與教學，持續探索聲音的可能性，
+      致力於將音樂中的感動與美感分享給更多聽眾與學習者。
+    </p>
+
+  </div>
+
 </section>
   
 </body>
