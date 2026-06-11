@@ -228,7 +228,7 @@
     
     .media-header h2 {
       font-family: 'Noto Serif TC', serif;
-      font-size: 48px;
+      font-size: 42px;
       margin-bottom: 20px;
     }
     
@@ -290,7 +290,100 @@
         transform: translateY(0);
       }
     }
+    .education-section{
+        background:#070b12;
     
+        padding:120px 10%;
+    
+        color:white;
+    }
+    
+    .education-header{
+        text-align:center;
+        margin-bottom:60px;
+    }
+    
+    .education-header h2{
+        font-family:'Noto Serif TC', serif;
+    
+        font-size:42px;
+    
+        margin-bottom:20px;
+    }
+    
+    .education-header p{
+        opacity:.75;
+    }
+    
+    .edu-card{
+    
+        max-width:700px;
+    
+        margin:auto;
+    
+        background:rgba(255,255,255,.03);
+    
+        border:1px solid rgba(255,255,255,.08);
+    
+        padding:60px;
+    
+        text-align:center;
+    
+        transition:.4s;
+    
+        box-shadow:
+        0 20px 50px rgba(0,0,0,.25);
+    }
+    
+    .edu-card:hover{
+    
+        transform:translateY(-10px);
+    
+        border-color:
+        rgba(255,255,255,.25);
+    
+        box-shadow:
+        0 30px 80px rgba(0,0,0,.4);
+    }
+    
+    .edu-icon{
+    
+        font-size:48px;
+    
+        margin-bottom:20px;
+    }
+    
+    .edu-card h3{
+    
+        font-family:'Noto Serif TC', serif;
+    
+        font-size:30px;
+    
+        margin-bottom:15px;
+    }
+    
+    .school-name{
+    
+        opacity:.7;
+    
+        margin-bottom:25px;
+    
+        letter-spacing:1px;
+    }
+    
+    .degree{
+    
+        font-size:26px;
+    
+        font-weight:600;
+    
+        margin-bottom:10px;
+    }
+    
+    .degree-sub{
+    
+        opacity:.8;
+    }
     @media (max-width: 768px) {
       nav {
         gap: 22px;
@@ -450,6 +543,47 @@
     </div>
   </div>
 </section>
-  
+
+<section class="education-section">
+
+  <div class="education-header">
+
+    <div class="section-tag">
+      EDUCATION
+    </div>
+
+    <h2>音樂歷程</h2>
+
+    <p>
+      德國音樂教育體系的專業養成與藝術淬鍊。
+    </p>
+
+  </div>
+
+  <div class="edu-card">
+
+    <div class="edu-icon">
+      🎓
+    </div>
+
+    <h3>
+      德國國立特羅辛根高等音樂院
+    </h3>
+
+    <div class="school-name">
+      Staatliche Hochschule für Musik Trossingen
+    </div>
+
+    <div class="degree">
+      Konzertexamen
+    </div>
+
+    <div class="degree-sub">
+      最高演奏家文憑（等同博士）
+    </div>
+
+  </div>
+
+</section>  
 </body>
 </html>
