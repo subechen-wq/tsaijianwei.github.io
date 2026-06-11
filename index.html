@@ -55,8 +55,9 @@
       display: flex;
       align-items: center;
       gap: 56px;
-    
-      padding: 28px 5%;
+
+      transition:.4s ease;
+      padding: 30px 5%;
     
       background: linear-gradient(
         to bottom,
@@ -653,6 +654,20 @@
     
         opacity:.7;
     }
+
+    .navbar.scrolled{
+
+        background:rgba(3,6,12,.96);
+    
+        padding:18px 5%;
+    
+        box-shadow:
+        0 10px 40px rgba(0,0,0,.35);
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
     
     @media (max-width: 768px) {
       nav {
@@ -754,6 +769,8 @@
         </ul>
     
     </nav>
+
+  <section class="hero" id="home">
     
     <div class="hero-content">
       <h1>蔡<br>建緯</h1>
@@ -928,6 +945,23 @@
   
   </div>
 
-</section>  
+</section> 
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+    const navbar =
+    document.querySelector(".navbar");
+
+    navbar.classList.toggle(
+        "scrolled",
+        window.scrollY > 80
+    );
+
+});
+
+</script>
+  
 </body>
 </html>
