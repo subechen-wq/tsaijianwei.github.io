@@ -19,21 +19,25 @@
       font-family: 'Noto Serif TC', 'Playfair Display', serif;
     }
 
-    .hero{
+    .hero {
+      min-height: 100vh;
+    
       background:
         linear-gradient(
           to right,
-          rgba(0,0,0,.92) 0%,
-          rgba(0,0,0,.65) 35%,
-          rgba(0,0,0,.18) 72%
+          rgba(0,0,0,0.9) 0%,
+          rgba(0,0,0,0.6) 36%,
+          rgba(0,0,0,0.16) 72%,
+          rgba(0,0,0,0.28) 100%
         ),
         url("hero.jpg");
     
-      background-repeat:no-repeat;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 72% 58%;
     
-      background-size:92%;
-    
-      background-position:95% center;
+      position: relative;
+      overflow: hidden;
     }
     
     /* 歐洲古典風：不要毛玻璃，改成薄暗幕 */
@@ -46,15 +50,14 @@
     
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      gap: 52px;
+      gap: 56px;
     
-      padding: 35px 70%;
+      padding: 28px 5%;
     
       background: linear-gradient(
         to bottom,
-        rgba(2,4,8,0.78),
-        rgba(2,4,8,0.35),
+        rgba(2,4,8,0.72),
+        rgba(2,4,8,0.28),
         rgba(2,4,8,0)
       );
     
@@ -64,7 +67,10 @@
     
     .navbar ul {
       display: flex;
+      flex-direction: row;
+      align-items: center;
       gap: 36px;
+    
       list-style: none;
       margin: 0;
       padding: 0;
@@ -76,18 +82,18 @@
       font-weight: 600;
       color: #d3b476;
       letter-spacing: 4px;
+      line-height: 1;
       cursor: pointer;
       transition: .3s;
+      white-space: nowrap;
     }
     
-    .logo:hover {
-      opacity: .8;
-    }
-
-    .logo span{
-        font-size:10px;
-        letter-spacing:4px;
-        color:rgba(211,180,118,.7);
+    .logo span {
+      display: block;
+      margin-top: 10px;
+      font-size: 10px;
+      letter-spacing: 6px;
+      color: rgba(211,180,118,.72);
     }
     
     .navbar a {
