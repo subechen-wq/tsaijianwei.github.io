@@ -121,7 +121,6 @@
       left: 8%;
       transform: translateY(-50%);
       max-width: 520px;
-      animation: fadeUp 1.6s ease forwards;
     }
 
     .hero h1 {
@@ -714,22 +713,45 @@
       scroll-behavior:smooth;
     }
 
-    /* ===== Reveal Animation 統一版 ===== */
-    .reveal {
-      opacity: 0 !important;
-      transform: translateY(120px) !important;
-      transition:
-        opacity 3s ease,
-        transform 3s ease;
+    /* ===== Global Animation System ===== */
+    body:not(.page-loaded) .reveal {
+      opacity: 0;
     }
     
-    .reveal.active {
+    body.page-loaded .reveal {
+      opacity: 0 !important;
+      transform: translateY(80px) !important;
+      transition:
+        opacity 1.4s ease,
+        transform 1.4s ease;
+    }
+    
+    body.page-loaded .reveal.active {
       opacity: 1 !important;
       transform: translateY(0) !important;
     }
     
-    .reveal-delay {
-      transition-delay: .6s;
+    body.page-loaded .reveal-delay {
+      transition-delay: .35s;
+    }
+    
+    /* Hero 文字進場 */
+    .hero-content {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: heroFadeUp 1.4s ease forwards;
+      animation-delay: .35s;
+    }
+    
+    @keyframes heroFadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
     }
     
     @media (max-width: 768px) {
@@ -1023,6 +1045,8 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
+  document.body.classList.add("page-loaded");
+
   const navbar = document.querySelector(".navbar");
 
   function handleNavbarScroll() {
@@ -1037,7 +1061,7 @@ document.addEventListener("DOMContentLoaded", function () {
     reveals.forEach(function (element) {
       const rect = element.getBoundingClientRect();
 
-      if (rect.top < window.innerHeight * 0.65) {
+      if (rect.top < window.innerHeight * 0.72) {
         element.classList.add("active");
       }
     });
