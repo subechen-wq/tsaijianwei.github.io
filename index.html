@@ -1023,7 +1023,6 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Navbar scroll effect
   const navbar = document.querySelector(".navbar");
 
   function handleNavbarScroll() {
@@ -1032,25 +1031,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  window.addEventListener("scroll", handleNavbarScroll);
-  handleNavbarScroll();
-
-
-  // Reveal animation
-  const revealElements = document.querySelectorAll(".reveal");
-
   function handleReveal() {
-    revealElements.forEach(function (element) {
-      const elementTop = element.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
+    const reveals = document.querySelectorAll(".reveal");
 
-      if (elementTop < windowHeight * 0.78) {
+    reveals.forEach(function (element) {
+      const rect = element.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight - 180 && rect.bottom > 0) {
         element.classList.add("active");
       }
     });
   }
 
-  window.addEventListener("scroll", handleReveal);
+  window.addEventListener("scroll", function () {
+    handleNavbarScroll();
+    handleReveal();
+  });
+
+  handleNavbarScroll();
 
 });
 </script>
