@@ -277,18 +277,7 @@
       opacity: .82;
       letter-spacing: .6px;
     }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(36px);
-      transition: 1s ease;
-    }
-    
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
+   
     @media(max-width:900px) {
 
       .about-section {
@@ -724,13 +713,14 @@
     html{
       scroll-behavior:smooth;
     }
-    /* ===== Reveal Animation ===== */
+
+    /* ===== Reveal Animation 統一版 ===== */
     .reveal {
       opacity: 0;
-      transform: translateY(36px);
+      transform: translateY(70px);
       transition:
-        opacity 1s ease,
-        transform 1s ease;
+        opacity 1.2s ease,
+        transform 1.2s ease;
     }
     
     .reveal.active {
@@ -739,19 +729,9 @@
     }
     
     .reveal-delay {
-      transition-delay: .18s;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 1s ease;
+      transition-delay: .25s;
     }
     
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
     @media (max-width: 768px) {
       nav {
         gap: 22px;
@@ -1043,6 +1023,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
+  // Navbar scroll effect
   const navbar = document.querySelector(".navbar");
 
   function handleNavbarScroll() {
@@ -1051,30 +1032,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function handleReveal() {
-    const reveals = document.querySelectorAll(".reveal");
-
-    reveals.forEach(function (reveal) {
-      const windowHeight = window.innerHeight;
-      const revealTop = reveal.getBoundingClientRect().top;
-      const revealPoint = 120;
-
-      if (revealTop < windowHeight - revealPoint) {
-        reveal.classList.add("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", function () {
-    handleNavbarScroll();
-    handleReveal();
-  });
-
+  window.addEventListener("scroll", handleNavbarScroll);
   handleNavbarScroll();
 
-  setTimeout(function () {
-    handleReveal();
-  }, 300);
+
+  // Reveal animation
+  const revealElements = document.querySelectorAll(".reveal");
+
+  const revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  }, {
+    threshold: 0.25
+  });
+
+  revealElements.forEach(function (element) {
+    revealObserver.observe(element);
+  });
 
 });
 </script>
