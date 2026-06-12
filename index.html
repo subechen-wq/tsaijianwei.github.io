@@ -724,7 +724,23 @@
     html{
       scroll-behavior:smooth;
     }
+    /* ===== Reveal Animation ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition:
+        opacity 1s ease,
+        transform 1s ease;
+    }
     
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .reveal-delay {
+      transition-delay: .18s;
+    }
     @media (max-width: 768px) {
       nav {
         gap: 22px;
@@ -842,11 +858,11 @@
 
 <section class="about-section" id="about">
 
-  <div class="about-image reveal">
+  <div class="about-content reveal">
     <img src="about.jpg" alt="蔡建緯長笛演奏家">
   </div>
-
-  <div class="about-content reveal">
+  
+  <div class="about-content reveal reveal-delay">
 
     <div class="section-tag">ARTIST PROFILE</div>
 
@@ -1014,26 +1030,38 @@
 </section> 
 
 <script>
-window.addEventListener("scroll", function(){
+document.addEventListener("DOMContentLoaded", function () {
 
+  // ===== Navbar Scroll Effect =====
   const navbar = document.querySelector(".navbar");
 
-  navbar.classList.toggle(
-    "scrolled",
-    window.scrollY > 80
-  );
+  function handleNavbarScroll() {
+    if (navbar) {
+      navbar.classList.toggle("scrolled", window.scrollY > 80);
+    }
+  }
 
+  window.addEventListener("scroll", handleNavbarScroll);
+  handleNavbarScroll();
+
+
+  // ===== Reveal Animation =====
   const reveals = document.querySelectorAll(".reveal");
 
-  reveals.forEach(function(reveal){
-    const windowHeight = window.innerHeight;
-    const revealTop = reveal.getBoundingClientRect().top;
-    const revealPoint = 120;
+  function handleReveal() {
+    reveals.forEach(function (reveal) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveal.getBoundingClientRect().top;
+      const revealPoint = 120;
 
-    if(revealTop < windowHeight - revealPoint){
-      reveal.classList.add("active");
-    }
-  });
+      if (revealTop < windowHeight - revealPoint) {
+        reveal.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", handleReveal);
+  handleReveal();
 
 });
 </script>
