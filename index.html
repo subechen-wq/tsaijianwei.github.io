@@ -318,7 +318,7 @@
       letter-spacing: 4px;
       text-transform: uppercase;
       color: #d3b476;
-      margin-bottom: 18px;
+      margin-bottom: 28px;
       font-weight: 500;
       position: relative;
       display: inline-block;
@@ -349,22 +349,34 @@
     }
     
     .about-highlight div {
-      border-top: 1px solid rgba(211,180,118,.55);
-      padding-top: 16px;
+      border-top: 1px solid rgba(211,180,118,.35);
+      padding-top: 18px;
+      transition:
+        transform .4s ease,
+        border-color .4s ease;
     
       font-size: 15px;
       line-height: 1.8;
       color: rgba(255,255,255,.72);
     }
+
+    .about-highlight div:hover {
+
+      transform: translateY(-4px);
+    
+      border-top-color: #d3b476;
+    }
     
     .about-highlight span {
       display: block;
       font-family: 'Playfair Display', serif;
-      font-size: 22px;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: .3px;
       color: #d3b476;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
-    
+        
     .about-content p {
       font-family: 'Noto Serif TC', serif;
       font-size: 18px;
