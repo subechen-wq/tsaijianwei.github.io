@@ -741,6 +741,17 @@
     .reveal-delay {
       transition-delay: .18s;
     }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+    
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
     @media (max-width: 768px) {
       nav {
         gap: 22px;
@@ -1032,7 +1043,6 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ===== Navbar Scroll Effect =====
   const navbar = document.querySelector(".navbar");
 
   function handleNavbarScroll() {
@@ -1041,14 +1051,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  window.addEventListener("scroll", handleNavbarScroll);
-  handleNavbarScroll();
-
-
-  // ===== Reveal Animation =====
-  const reveals = document.querySelectorAll(".reveal");
-
   function handleReveal() {
+    const reveals = document.querySelectorAll(".reveal");
+
     reveals.forEach(function (reveal) {
       const windowHeight = window.innerHeight;
       const revealTop = reveal.getBoundingClientRect().top;
@@ -1060,8 +1065,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  window.addEventListener("scroll", handleReveal);
-  handleReveal();
+  window.addEventListener("scroll", function () {
+    handleNavbarScroll();
+    handleReveal();
+  });
+
+  handleNavbarScroll();
+
+  setTimeout(function () {
+    handleReveal();
+  }, 300);
 
 });
 </script>
