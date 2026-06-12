@@ -440,10 +440,6 @@
       box-shadow: 0 25px 70px rgba(0,0,0,0.45);
       transition: 0.4s;
     }
-
-    .video-info {
-      padding:48px 50px 56px;
-    }
     
     .video-card:hover {
       transform: translateY(-8px);
@@ -461,7 +457,26 @@
       width: 100%;
       height: 100%;
     }
-     
+
+    .video-info {
+      padding:48px 50px 56px;
+      position:relative;
+    }
+
+    .video-info::before{
+      content:"";
+    
+      position:absolute;
+    
+      top:0;
+      left:50px;
+    
+      width:60px;
+      height:1px;
+    
+      background:#d3b476;
+    }
+    
     .video-info h3{
       font-family:'Playfair Display',serif;
       font-size:42px;
