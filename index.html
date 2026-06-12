@@ -759,6 +759,44 @@
         transform: translateY(-50%);
       }
     }
+
+    /* ===== Premium Section Divider ===== */
+
+    .about-section,
+    .media-section,
+    .education-section,
+    .teaching-section,
+    .contact-section{
+      position:relative;
+    }
+    
+    .media-section::before,
+    .education-section::before,
+    .teaching-section::before,
+    .contact-section::before{
+    
+      content:"";
+    
+      position:absolute;
+    
+      top:0;
+    
+      left:50%;
+    
+      transform:translateX(-50%);
+    
+      width:220px;
+    
+      height:1px;
+    
+      background:
+        linear-gradient(
+          to right,
+          transparent,
+          rgba(211,180,118,.22),
+          transparent
+        );
+    }
     
     @media (max-width: 768px) {
       nav {
