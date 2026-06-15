@@ -856,10 +856,23 @@
     }
 
     .contact-section{
-      background:#05070c;
+      position:relative;
+    
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(211,180,118,.04) 0%,
+          rgba(211,180,118,0) 55%
+        ),
+        #05070c;
+    
       color:white;
-      padding:130px 10%;
+    
+      padding:160px 10% 150px;
+    
       text-align:center;
+    
+      overflow:hidden;
     }
     
     .contact-inner{
@@ -869,8 +882,14 @@
     
     .contact-section h2{
       font-family:'Noto Serif TC', serif;
-      font-size:42px;
-      margin-bottom:24px;
+    
+      font-size:52px;
+    
+      font-weight:600;
+    
+      letter-spacing:1px;
+    
+      margin-bottom:32px;
     }
     
     .contact-section p{
