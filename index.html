@@ -882,14 +882,30 @@
     
     .contact-section h2{
       font-family:'Noto Serif TC', serif;
-    
+      position:relative;
       font-size:52px;
-    
       font-weight:600;
-    
       letter-spacing:1px;
-    
       margin-bottom:32px;
+    }
+
+    .contact-section h2::after{
+      content:"";
+    
+      display:block;
+    
+      width:70px;
+      height:1px;
+    
+      margin:28px auto 0;
+    
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(211,180,118,.8),
+          transparent
+        );
     }
     
     .contact-section p{
@@ -973,27 +989,6 @@
     .contact-links a:hover::before{
     
       left:120%;
-    }
-
-    .contact-inner{
-      max-width:760px;
-      margin:auto;
-    
-      position:relative;
-    
-      padding:72px 70px 68px;
-    
-      border:1px solid rgba(255,255,255,.08);
-    
-      background:
-        linear-gradient(
-          180deg,
-          rgba(255,255,255,.035),
-          rgba(255,255,255,.012)
-        );
-    
-      box-shadow:
-        0 30px 80px rgba(0,0,0,.28);
     }
 
     .footer{
