@@ -446,6 +446,7 @@
     .video-card {
       max-width:none;
       margin:0;
+      overflow:hidden;
     
       display:flex;
       flex-direction:column;
@@ -458,8 +459,9 @@
     }
     
     .video-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 35px 90px rgba(0,0,0,0.65);
+      transform:translateY(-6px);
+      bbox-shadow:
+      0 35px 90px rgba(0,0,0,.55);
     }
     
     .video-wrapper {
@@ -472,6 +474,11 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      transition:transform .8s ease;
+    }
+
+    .video-card:hover iframe{
+      transform:scale(1.03);
     }
 
     .video-info {
