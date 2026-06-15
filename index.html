@@ -542,6 +542,128 @@
       opacity:.75;
       letter-spacing:1px;
     }
+
+    .edu-timeline{
+      position:relative;
+      max-width:900px;
+      margin:0 auto;
+      padding-left:90px;
+    }
+    
+    .edu-timeline::before{
+      content:"";
+    
+      position:absolute;
+      left:24px;
+      top:10px;
+      bottom:10px;
+    
+      width:1px;
+    
+      background:
+      linear-gradient(
+        to bottom,
+        rgba(211,180,118,.15),
+        rgba(211,180,118,.7),
+        rgba(211,180,118,.15)
+      );
+    }
+    
+    .edu-item{
+      position:relative;
+      margin-bottom:80px;
+    }
+    
+    .edu-item:last-child{
+      margin-bottom:0;
+    }
+    
+    .edu-item::before{
+      content:"";
+    
+      position:absolute;
+    
+      left:-77px;
+      top:10px;
+    
+      width:12px;
+      height:12px;
+    
+      border-radius:50%;
+    
+      background:#d3b476;
+    
+      box-shadow:
+      0 0 0 6px rgba(211,180,118,.08);
+    }
+    
+    .edu-content{
+      padding:38px 42px;
+    
+      background:
+      linear-gradient(
+        145deg,
+        rgba(255,255,255,.035),
+        rgba(255,255,255,.015)
+      );
+    
+      border:1px solid rgba(255,255,255,.08);
+    
+      transition:.4s ease;
+    }
+    
+    .edu-content:hover{
+      transform:translateY(-6px);
+    
+      border-color:
+      rgba(211,180,118,.28);
+    
+      box-shadow:
+      0 20px 60px rgba(0,0,0,.35);
+    }
+    
+    .edu-year{
+      margin-bottom:18px;
+    
+      font-family:'Playfair Display', serif;
+      font-size:26px;
+      font-weight:600;
+    
+      color:white;
+    }
+    
+    .edu-location{
+      font-size:11px;
+      letter-spacing:4px;
+      color:#d3b476;
+      margin-bottom:18px;
+    }
+    
+    .edu-content h3{
+      font-family:'Noto Serif TC', serif;
+      font-size:30px;
+      margin-bottom:20px;
+    }
+    
+    .school-name{
+      font-family:'Playfair Display', serif;
+      font-size:26px;
+      line-height:1.4;
+      color:rgba(255,255,255,.55);
+      margin-bottom:28px;
+    }
+    
+    .degree{
+      font-family:'Playfair Display', serif;
+      font-size:42px;
+      font-weight:600;
+      margin-bottom:24px;
+    }
+    
+    .edu-content p{
+      line-height:2;
+      color:rgba(255,255,255,.78);
+    }
        
     .edu-location{
       font-family:'Montserrat', sans-serif;
