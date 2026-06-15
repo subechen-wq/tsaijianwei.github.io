@@ -733,79 +733,125 @@
       margin-bottom:110px;
     }
 
-    .teaching-section{
-      background:#0a0f18;
-      color:white;
-      padding:120px 10%;
+   .teaching-section {
+      background: #080c12;
+      color: #fff;
+      padding: 130px 10%;
     }
     
-    .teaching-header{
-      text-align:center;
-      margin-bottom:70px;
+    .teaching-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 70px;
     }
     
-    .teaching-header h2{
-      font-family:'Noto Serif TC', serif;
-      font-size:42px;
-      margin-bottom:20px;
+    .teaching-header h2 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 42px;
+      margin-bottom: 20px;
     }
     
-    .teaching-header p{
-      opacity:.75;
-      letter-spacing:1px;
+    .teaching-header p {
+      font-size: 17px;
+      line-height: 1.9;
+      color: rgba(255,255,255,.62);
     }
     
-    .teaching-grid{
-      display:grid;
-      grid-template-columns:repeat(2, 1fr);
-      gap:28px;
-      max-width:1000px;
-      margin:auto;
+    .teaching-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 80px;
+      align-items: start;
     }
     
-    .teaching-card{
-      background:linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
-      border:1px solid rgba(255,255,255,.1);
-      padding:42px;
-      transition:.4s ease;
-      position:relative;
-      overflow:hidden;
+    .teaching-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #d3b476;
+      margin-bottom: 24px;
     }
     
-    .teaching-card::before{
-      content:"";
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:1px;
-      background:linear-gradient(to right, rgba(211,180,118,.8), transparent);
+    .teaching-intro h3 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 31px;
+      line-height: 1.55;
+      font-weight: 500;
+      margin-bottom: 28px;
     }
     
-    .teaching-card.reveal.active:hover{
-      transform:translateY(-8px) !important;
-      border-color:rgba(211,180,118,.35);
-      box-shadow:0 30px 80px rgba(0,0,0,.45);
+    .teaching-intro p {
+      font-size: 17px;
+      line-height: 2.1;
+      color: rgba(255,255,255,.62);
     }
     
-    .teaching-number{
-      color:rgba(211,180,118,.85);
-      font-family:'Playfair Display', serif;
-      font-size:18px;
-      margin-bottom:24px;
-      letter-spacing:2px;
+    .teaching-list {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid rgba(211,180,118,.45);
     }
     
-    .teaching-card h3{
-      font-family:'Noto Serif TC', serif;
-      font-size:28px;
-      margin-bottom:18px;
+    .teaching-item {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 28px;
+      padding: 34px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
     }
     
-    .teaching-card p{
-      opacity:.72;
-      line-height:1.9;
-      letter-spacing:.6px;
+    .teaching-item span {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: #d3b476;
+    }
+    
+    .teaching-item h4 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 21px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    
+    .teaching-item p {
+      font-size: 16px;
+      line-height: 1.9;
+      color: rgba(255,255,255,.58);
+    }
+    
+    .teaching-item {
+      transition: transform .35s ease, border-color .35s ease;
+    }
+    
+    .teaching-item:hover {
+      transform: translateX(8px);
+      border-bottom-color: rgba(211,180,118,.5);
+    }
+    
+    @media(max-width:900px) {
+      .teaching-section {
+        padding: 100px 8%;
+      }
+    
+      .teaching-inner {
+        grid-template-columns: 1fr;
+        gap: 56px;
+      }
+    
+      .teaching-header h2 {
+        font-size: 36px;
+      }
+    
+      .teaching-intro h3 {
+        font-size: 27px;
+      }
+    
+      .teaching-item {
+        grid-template-columns: 54px 1fr;
+        gap: 20px;
+      }
     }
 
     .contact-section{
