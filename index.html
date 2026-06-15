@@ -433,11 +433,19 @@
     }
 
     .media-grid{
+      max-width:1100px;
+      margin:0 auto;
+    
       display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:40px;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:36px;
     }
-
+    
+    .video-card{
+      max-width:none;
+      margin:0;
+    }
+    
     .video-card-featured{
       grid-column:1 / -1;
     }
