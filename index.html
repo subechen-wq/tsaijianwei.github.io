@@ -438,17 +438,19 @@
     
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:36px;
-    }
+      gap:42px;
     
-    .video-card{
-      max-width:none;
-      margin:0;
+      align-items:stretch;
     }
     
     .video-card {
-      max-width: 900px;
-      margin: 0 auto;
+      max-width:none;
+      margin:0;
+    
+      display:flex;
+      flex-direction:column;
+      height:100%;
+    
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
       box-shadow: 0 25px 70px rgba(0,0,0,0.45);
@@ -473,13 +475,13 @@
     }
 
     .video-info {
-      padding:48px 50px 56px;
-      max-width:800px;
+      flex:1;
+      padding:42px 44px 48px;
     }
 
     .video-info h3{
       font-family:'Playfair Display',serif;
-      font-size:42px;
+      font-size:36px;
       line-height:1.2;
       font-weight:600;
       margin-bottom:20px;
