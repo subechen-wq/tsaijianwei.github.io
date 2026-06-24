@@ -1273,27 +1273,28 @@
   color: rgba(255,255,255,.72);
 }
 
+/* ===== Logo Fix ===== */
+
 .logo{
-  font-family: 'Playfair Display', serif;
-  font-size: 44px;
-  font-weight: 600;
-  color: #d3b476;
-  letter-spacing: 4px;
-  line-height: .9;
-  white-space: nowrap;
-}
-.logo a{
-  text-decoration:none;
-  color:inherit;
+  font-family:'Playfair Display', serif !important;
+  font-size:48px !important;
+  font-weight:600 !important;
+  letter-spacing:4px !important;
+  color:#d3b476 !important;
+  line-height:.9 !important;
 }
 
 .logo span{
-  display: block;
-  margin-top: 8px;
-  padding-left: 2px;
-  font-family: 'Playfair Display', serif;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 6px;
-  color: rgba(211,180,118,.62);
+  display:block !important;
+  margin-top:8px !important;
+
+  font-size:10px !important;
+  letter-spacing:7px !important;
+
+  color:rgba(211,180,118,.65) !important;
+}
+
+.logo a{
+  text-decoration:none;
+  color:inherit;
 }
