@@ -1292,3 +1292,28 @@
   line-height: 2;
   color: rgba(255,255,255,.72);
 }
+
+.logo a{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo span{
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 1;
+  color: #d3b476;
+}
+
+.logo small{
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  letter-spacing: 7px;
+  color: #d3b476;
+}
