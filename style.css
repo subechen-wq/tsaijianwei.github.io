@@ -1274,32 +1274,28 @@
 }
 
 .logo{
-  line-height: 1;
-  cursor: pointer;
-  transition: .3s;
-  white-space: nowrap;
+  line-height:1;
+  white-space:nowrap;
 }
 
 .logo a{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-decoration: none;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
 }
 
-.logo strong{
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 1;
-  color: #d3b476;
+.logo-main{
+  font-family:'Playfair Display', serif;
+  font-size:52px;
+  font-weight:600;
+  letter-spacing:4px;
+  color:#d3b476;
 }
 
-.logo span{
-  margin-top: 10px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  letter-spacing: 8px;
-  color: rgba(211,180,118,.72);
+.logo-sub{
+  margin-top:8px;
+  font-family:'Montserrat', sans-serif;
+  font-size:10px;
+  letter-spacing:8px;
+  color:rgba(211,180,118,.72);
 }
