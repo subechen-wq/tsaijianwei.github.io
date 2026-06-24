@@ -1274,30 +1274,30 @@
 }
 
 .logo{
-  line-height:1;
-  white-space:nowrap;
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  font-weight: 600;
+  color: #d3b476;
+  letter-spacing: 4px;
+  line-height: .9;
+  white-space: nowrap;
 }
 
 .logo a{
   text-decoration:none;
-  display:flex;
-  flex-direction:column;
+  color:inherit;
 }
 
-.logo-main{
+.logo span{
+  display:block;
+  margin-top:8px;
+
   font-family:'Playfair Display', serif;
-  font-size:52px;
-  font-weight:600;
-  letter-spacing:4px;
-  color:#d3b476;
-}
 
-.logo-sub{
-  margin-top: 9px;
-  padding-left: 4px;
-  font-family: 'Playfair Display', serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 7px;
-  color: rgba(211,180,118,.55);
+  font-size:10px;
+  font-weight:500;
+
+  letter-spacing:7px;
+
+  color:rgba(211,180,118,.65);
 }
