@@ -1293,11 +1293,11 @@
 }
 
 .logo-sub{
-  margin-top: 7px;
-  padding-left: 2px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
+  margin-top: 9px;
+  padding-left: 4px;
+  font-family: 'Playfair Display', serif;
+  font-size: 10px;
   font-weight: 600;
-  letter-spacing: 6.5px;
-  color: rgba(211,180,118,.58);
+  letter-spacing: 7px;
+  color: rgba(211,180,118,.55);
 }
