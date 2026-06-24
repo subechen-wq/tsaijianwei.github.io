@@ -1265,3 +1265,30 @@
     transform: translateY(0);
   }
 }
+
+.page-hero{
+  min-height: 62vh;
+  padding: 180px 10% 120px;
+  background: #05070c;
+  color: #fff;
+}
+
+.page-hero .section-tag{
+  margin-bottom: 28px;
+}
+
+.page-hero h1{
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.page-hero p{
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 2;
+  color: rgba(255,255,255,.72);
+}
