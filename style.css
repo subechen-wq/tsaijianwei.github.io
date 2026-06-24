@@ -1295,6 +1295,10 @@
 }
 
 .logo a{
-  text-decoration:none;
-  color:inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
 }
