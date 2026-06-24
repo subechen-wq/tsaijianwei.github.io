@@ -71,26 +71,6 @@
       margin: 0;
       padding: 0;
     }
-    
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 34px;
-      font-weight: 600;
-      color: #d3b476;
-      letter-spacing: 6px;
-      line-height: 1;
-      cursor: pointer;
-      transition: .3s;
-      white-space: nowrap;
-    }
-    
-    .logo span {
-      display: block;
-      margin-top: 10px;
-      font-size: 10px;
-      letter-spacing: 6px;
-      color: rgba(211,180,118,.72);
-    }
 
     .logo:hover {
       opacity: .82;
@@ -1293,27 +1273,33 @@
   color: rgba(255,255,255,.72);
 }
 
+.logo{
+  line-height: 1;
+  cursor: pointer;
+  transition: .3s;
+  white-space: nowrap;
+}
+
 .logo a{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-decoration: none;
-  color: inherit;
 }
 
-.logo span{
+.logo strong{
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 600;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   line-height: 1;
   color: #d3b476;
 }
 
-.logo small{
-  margin-top: 8px;
+.logo span{
+  margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  letter-spacing: 7px;
-  color: #d3b476;
+  font-size: 10px;
+  letter-spacing: 8px;
+  color: rgba(211,180,118,.72);
 }
