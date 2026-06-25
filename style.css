@@ -414,6 +414,11 @@
     
       align-items:stretch;
     }
+
+    .media-more{
+      text-align:center;
+      margin-top:56px;
+    }
     
     .video-card {
       max-width:none;
