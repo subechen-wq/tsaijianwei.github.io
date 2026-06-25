@@ -405,15 +405,15 @@
     }
 
     .media-grid{
-      max-width:1100px;
+      max-width:1040px;
       margin:0 auto;
-    
+      
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:42px;
-    
+      gap:36px;
+      
       align-items:stretch;
-    }
+   }
 
     .media-more{
       text-align:center;
@@ -437,14 +437,14 @@
     
     .video-card:hover {
       transform:translateY(-6px);
-      bbox-shadow:
+      box-shadow:
       0 35px 90px rgba(0,0,0,.55);
     }
     
     .video-wrapper {
       position: relative;
       width: 100%;
-      padding-bottom: 56.25%;
+      padding-bottom: 52%;
     }
     
     .video-wrapper iframe {
