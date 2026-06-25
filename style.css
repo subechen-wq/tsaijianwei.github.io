@@ -21,7 +21,7 @@
           rgba(0,0,0,0.16) 72%,
           rgba(0,0,0,0.28) 100%
         ),
-        url("images/hero-web.jpg");
+        url("images/hero/hero-web.jpg");
     
       background-repeat: no-repeat;
     
@@ -1177,7 +1177,7 @@
       .hero {
         background:
           linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.9)),
-          url("images/hero-web.jpg") no-repeat center center / cover;
+          url("images/hero/hero-web.jpg") no-repeat center center / cover;
       }
 
       .hero-content {
