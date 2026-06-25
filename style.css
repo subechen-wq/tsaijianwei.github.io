@@ -807,6 +807,14 @@
       transform: translateX(8px);
       border-bottom-color: rgba(211,180,118,.5);
     }
+
+    .teaching-content p{
+      font-size:18px;
+      line-height:2.1;
+      max-width:560px;
+      color:rgba(255,255,255,.66);
+      margin-bottom:38px;
+   }  
     
     @media(max-width:900px) {
       .teaching-section {
