@@ -1387,6 +1387,8 @@
 }
 
 .featured-project-image{
+  padding:18px;
+  background:#111;    
   overflow: hidden;
   background: transparent;
   display: flex;
