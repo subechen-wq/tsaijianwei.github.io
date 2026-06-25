@@ -1388,14 +1388,16 @@
 
 .featured-project-image{
   overflow:hidden;
+  background:#e8e5df;
 }
 
 .featured-project-image img{
   width:100%;
   display:block;
-  aspect-ratio:4 / 3;
-  object-fit:cover;
-  filter:brightness(.88) contrast(1.04);
+  max-height:620px;
+  object-fit:contain;
+  background:#e8e5df;
+  filter:brightness(.9) contrast(1.04);
   transition:1s ease;
 }
 
