@@ -1387,18 +1387,20 @@
 }
 
 .featured-project-image{
-  overflow:hidden;
-  background:#e8e5df;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  justify-content: center;
 }
 
 .featured-project-image img{
-  width:100%;
-  display:block;
-  max-height:620px;
-  object-fit:contain;
-  background:#e8e5df;
-  filter:brightness(.9) contrast(1.04);
-  transition:1s ease;
+  width: auto;
+  height: min(72vh, 680px);
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  filter: brightness(.9) contrast(1.04);
+  transition: 1s ease;
 }
 
 .featured-project-image:hover img{
