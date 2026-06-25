@@ -757,7 +757,12 @@
       line-height: 1.55;
       font-weight: 500;
       margin-bottom: 28px;
+      max-width: 500px;
     }
+
+    .teaching-content{
+      padding-top:56px;
+    }  
     
     .teaching-intro p {
       font-size: 17px;
