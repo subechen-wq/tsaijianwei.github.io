@@ -753,7 +753,7 @@
     
     .teaching-intro h3 {
       font-family: 'Noto Serif TC', serif;
-      font-size: 36px;
+      font-size: 40px;
       line-height: 1.55;
       font-weight: 500;
       margin-bottom: 28px;
@@ -761,14 +761,14 @@
     }
 
     .teaching-content{
-      padding-top:56px;
+      padding-top:48px;
     }  
     
     .teaching-intro p {
       font-size: 17px;
       line-height: 2.1;
       max-width:520px;
-      color: rgba(255,255,255,.62);
+      color:rgba(255,255,255,.60);
     }
     
     .teaching-list {
