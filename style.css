@@ -746,8 +746,8 @@
     .teaching-label {
       font-family: 'Montserrat', sans-serif;
       font-size: 12px;
-      letter-spacing: 3px;
-      color: #d3b476;
+      color:rgba(211,180,118,.88);
+      letter-spacing:4px;
       margin-bottom: 24px;
     }
     
