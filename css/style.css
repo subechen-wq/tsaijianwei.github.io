@@ -5,7 +5,7 @@
 * {
       margin: 0;
       padding: 0;
-      box-sizing: borㄑder-box;
+      box-sizing: border-box;
     }
 
     body {
@@ -492,25 +492,6 @@
 
     .about-content p:last-child {
       margin-bottom: 0;
-    }
-   
-    @media(max-width:900px) {
-
-      .about-section {
-        display: flex;
-        align-items: center;
-        gap: 90px;
-        padding: 140px 10%;
-      }
-    
-      .about-image img {
-        margin: auto;
-      }
-    
-      .about-highlight {
-        grid-template-columns: 1fr;
-      }
-    
     }
 
    .page-hero{
@@ -1069,10 +1050,6 @@
       margin-bottom:38px;
    }  
     
-    @media(max-width:900px) {
-      .teaching-section {
-        padding: 100px 8%;
-      }
     
       .teaching-inner {
         grid-template-columns: 1fr;
