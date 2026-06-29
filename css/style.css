@@ -1,4 +1,8 @@
- * {
+/* ==================================================
+   01. Reset & Base
+================================================== */
+
+* {
       margin: 0;
       padding: 0;
       box-sizing: borㄑder-box;
@@ -10,31 +14,150 @@
       font-family: 'Noto Serif TC', 'Playfair Display', serif;
     }
 
-    .hero {
-      min-height: 100vh;
+/* ==================================================
+   02. Global Components
+================================================== */
+
+.section-tag {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #d3b476;
+      margin-bottom: 36px;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+    }
     
+    .section-tag::after {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 1px;
+      background: #d3b476;
+      margin-top: 12px;
+      opacity: 0.75;
+    }
+
+    .section-title{
+      font-family:'Noto Serif TC', serif;
+      font-size:52px;
+      font-weight:500;
+      line-height:1.2;
+      margin-bottom:30px;
+      color:#fff;
+    }
+      
+   .section-description{
+      max-width:620px;
+      line-height:2;
+       color:rgba(255,255,255,.72);
+   }
+  
+   /* ---------- Primary Button ---------- */
+
+      .button{
+      
+        position:relative;
+      
+        display:inline-block;
+      
+        padding:15px 34px;
+      
+        border:1px solid rgba(211,180,118,.65);
+      
+        color:#d3b476;
+      
+        text-decoration:none;
+      
+        letter-spacing:4px;
+        font-size:12px;
+      
+        overflow:hidden;
+      
+        transition:
+          transform .4s ease,
+          box-shadow .4s ease,
+          border-color .4s ease,
+          color .4s ease;
+      }
+      
+      .button:hover{
+      
+        transform:translateY(-4px);
+      
+        color:#d3b476;
+      
+        border-color:#d3b476;
+      
+        box-shadow:
+          0 0 28px rgba(211,180,118,.18),
+          0 10px 30px rgba(0,0,0,.35);
+      }
+      
+      .button::before{
+      
+        content:"";
+      
+        position:absolute;
+      
+        top:0;
+        left:-120%;
+      
+        width:100%;
+        height:100%;
+      
+        background:
+          linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.15),
+            transparent
+          );
+      
+        transition:.8s;
+      }
+      
+      .button:hover::before{
+      
+        left:120%;
+      
+      }   
+
+/* ---------- Premium Section Divider ---------- */
+    .about-section,
+    .media-section,
+    .education-section,
+    .teaching-section,
+    .contact-section{
+      position:relative;
+    }
+    
+    .media-section::before,
+    .education-section::before,
+    .teaching-section::before,
+    .contact-section::before{    
+      content:"";    
+      position:absolute;    
+      top:0;   
+      left:50%;  
+      transform:translateX(-50%);    
+      width:220px;    
+      height:1px;    
       background:
         linear-gradient(
           to right,
-          rgba(0,0,0,0.9) 0%,
-          rgba(0,0,0,0.6) 36%,
-          rgba(0,0,0,0.16) 72%,
-          rgba(0,0,0,0.28) 100%
-        ),
-        url("../images/hero/hero-web.jpg");
-    
-      background-repeat: no-repeat;
-    
-      /* 改回 cover，避免左邊露出 gap */
-      background-size: cover;
-    
-      /* 保留照片偏右、稍微下移 */
-      background-position: 82% 40%;
-    
-      position: relative;
-      overflow: hidden;
+          transparent,
+          rgba(211,180,118,.35),
+          transparent
+        );
     }
-    
+
+/* ==================================================
+   03. Navigation
+================================================== */
+
     /* 歐洲古典風：不要毛玻璃，改成薄暗幕 */
     .navbar {
       position: fixed;
@@ -90,140 +213,122 @@
       padding-bottom: 7px;
     }
 
-    .hero-content {
-      position: absolute;
-      top: 60%;
-      left: 8%;
-      transform: translateY(-50%);
-      max-width: 520px;
+/* ==================================================
+   04. Hero
+================================================== */
+
+/* ---------- Hero Section ---------- */
+
+.hero{
+  min-height:100vh;
+
+  position:relative;
+  overflow:hidden;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,.90) 0%,
+      rgba(0,0,0,.60) 36%,
+      rgba(0,0,0,.16) 72%,
+      rgba(0,0,0,.28) 100%
+    ),
+    url("../images/hero/hero-web.jpg");
+
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:82% 40%;
+}
+
+
+/* ---------- Hero Content ---------- */
+
+.hero-content{
+  position:absolute;
+  top:60%;
+  left:8%;
+  transform:translateY(-50%);
+  max-width:520px;
+}
+
+
+/* ---------- Hero Typography ---------- */
+
+.hero h1{
+  font-family:'Noto Serif TC','Noto Serif CJK TC',serif;
+
+  font-size:72px;
+  font-weight:500;
+
+  line-height:1.08;
+  letter-spacing:3px;
+
+  margin-bottom:28px;
+}
+
+.hero .subtitle{
+  font-family:'Montserrat',sans-serif;
+
+  font-size:13px;
+
+  letter-spacing:6px;
+  text-transform:uppercase;
+
+  color:#d3b476;
+
+  margin-bottom:28px;
+}
+
+.hero .line{
+  width:70px;
+  height:1px;
+
+  background:#fff;
+
+  opacity:.75;
+
+  margin-bottom:28px;
+}
+
+.hero .intro{
+  max-width:620px;
+
+  font-family:'Noto Sans TC',sans-serif;
+
+  font-size:16px;
+  font-weight:300;
+
+  line-height:2;
+
+  color:rgba(255,255,255,.82);
+
+  margin-bottom:45px;
+}
+
+
+/* ---------- Hero Scroll Indicator ---------- */
+
+.scroll-down{
+  /* 保留目前的 CSS */
+}
+
+/* ---------- Hero Typography ---------- */
+
+.artist-name-en{
+      font-family:'Playfair Display', serif;
+      font-size:18px;
+      font-weight:400;
+      letter-spacing:5px;
+      color:rgba(255,255,255,.65);
+      font-style:italic;
+      margin-top:20px;
+      margin-bottom:12px;
     }
 
-    .hero h1 {
-      font-family: 'Noto Serif TC', 'Noto Serif CJK TC', serif;
-      font-size: 72px;
-      line-height: 1.08;
-      letter-spacing: 3px;
-      margin-bottom: 28px;
-      font-weight: 500;
-    }
+/* ===================================================
+   05. About
+=================================================== */
 
-    .hero .subtitle {
-      font-family: 'Montserrat', sans-serif;
-      color:#d3b476;
-      font-size: 13px;
-      letter-spacing: 6px;
-      text-transform:uppercase;
-      margin-bottom: 28px;
-    }
-
-    .hero .line {
-      width: 70px;
-      height: 1px;
-      background: white;
-      margin-bottom: 28px;
-      opacity: 0.75;
-    }
-
-    .hero .intro{
-      font-family: 'Noto Sans TC', sans-serif;
-  
-      font-size: 16px;
-  
-      line-height: 2;
-
-      margin-bottom: 45px;
-  
-      font-weight: 300;
-  
-      color: rgba(255,255,255,.82);
-  
-      max-width: 620px;
-  }
-
-    .button {
-
-      position:relative;
-    
-      display:inline-block;
-    
-      color:#d3b476;
-    
-      text-decoration:none;
-    
-      border:1px solid rgba(211,180,118,.65);
-    
-      padding:15px 34px;
-    
-      letter-spacing:4px;
-    
-      font-size:12px;
-    
-      overflow:hidden;
-    
-      transition:
-        transform .4s ease,
-        box-shadow .4s ease,
-        border-color .4s ease,
-        color .4s ease;
-    }
-
-    .button:hover {
-
-      transform:translateY(-4px);
-    
-      color:#d3b476;
-    
-      border-color:#d3b476;
-    
-      box-shadow:
-        0 0 28px rgba(211,180,118,.18),
-        0 10px 30px rgba(0,0,0,.35);
-    }
-
-    .button::before{
-
-      content:"";
-    
-      position:absolute;
-    
-      top:0;
-    
-      left:-120%;
-    
-      width:100%;
-    
-      height:100%;
-    
-      background:
-        linear-gradient(
-          120deg,
-          transparent,
-          rgba(255,255,255,.15),
-          transparent
-        );
-    
-      transition:.8s;
-    }
-    
-    .button:hover::before{
-    
-      left:120%;
-    }
-
-    <div class="scroll-down">
-        SCROLL
-    </div>
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(-42%);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(-50%);
-      }
-    }
     .about-section {
       background:
         linear-gradient(
@@ -282,28 +387,6 @@
     .about-content {
       flex: 1;
       max-width: 620px;
-    }
-    
-    .section-tag {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: #d3b476;
-      margin-bottom: 36px;
-      font-weight: 500;
-      position: relative;
-      display: inline-block;
-    }
-    
-    .section-tag::after {
-      content: "";
-      display: block;
-      width: 42px;
-      height: 1px;
-      background: #d3b476;
-      margin-top: 12px;
-      opacity: 0.75;
     }
     
     .about-content h2 {
@@ -380,6 +463,10 @@
       }
     
     }
+
+/* ===================================================
+   06. Media
+=================================================== */
    
     .media-section {
       background: #05070c;
@@ -498,6 +585,20 @@
         transform: translateY(0);
       }
     }
+
+/* ---------- Media Typography ---------- */
+    .work-type{
+      font-family:'Montserrat',sans-serif;
+      font-size:11px;
+      letter-spacing:4px;
+      color:#d3b476;
+      margin-bottom:14px;
+    }
+
+/* ==================================================
+   07. Education
+================================================== */
+
     .education-section{
       background:#070b12;
       padding:120px 10%;
@@ -710,6 +811,10 @@
       margin-bottom:110px;
     }
 
+/* ===================================================
+   08. Teaching
+=================================================== */
+
    .teaching-section {
       background: #080c12;
       color: #fff;
@@ -844,6 +949,10 @@
         gap: 20px;
       }
     }
+
+/* ===================================================
+   09. Contact
+=================================================== */
 
     .contact-section{
       position:relative;
@@ -983,6 +1092,10 @@
       left:120%;
     }
 
+/* ===================================================
+   10. Footer
+=================================================== */
+
     .footer{
       background:
         linear-gradient(
@@ -1088,110 +1201,63 @@
       scroll-behavior:smooth;
     }
 
-    /* ===== Global Animation System ===== */
+/* ===================================================
+   11. Animation
+=================================================== */
 
-      .reveal {
-        opacity: 0;
-        transform: translateY(34px);
+      /* ---------- Reveal Animation ---------- */
+      
+      .reveal{
+        opacity:0;
+        transform:translateY(34px);
         transition:
           opacity 1.15s cubic-bezier(.22, 1, .36, 1),
           transform 1.15s cubic-bezier(.22, 1, .36, 1);
-        will-change: opacity, transform;
+        will-change:opacity, transform;
       }
       
-      .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
+      .reveal.active{
+        opacity:1;
+        transform:translateY(0);
       }
       
-      .reveal-delay {
-        transition-delay: .18s;
+      .reveal-delay{
+        transition-delay:.18s;
       }
       
-      .reveal-delay-2 {
-        transition-delay: .32s;
+      .reveal-delay-2{
+        transition-delay:.32s;
       }
       
-      .reveal-delay-3 {
-        transition-delay: .46s;
+      .reveal-delay-3{
+        transition-delay:.46s;
       }
-    
-    /* Hero 文字進場 */
-    .hero-content {
-      opacity: 0;
-      transform: translateY(30px);
-      animation: heroFadeUp 1.4s ease forwards;
-      animation-delay: .35s;
-    }
-    
-    @keyframes heroFadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
+      
+      
+      /* ---------- Hero Intro Animation ---------- */
+      
+      .hero-content{
+        opacity:0;
+        animation:heroFadeIn 1.4s ease forwards;
+        animation-delay:.35s;
       }
-      to {
-        opacity: 1;
-        transform: translateY(-50%);
+      
+      @keyframes heroFadeIn{
+        from{
+          opacity:0;
+          transform:translateY(-46%);
+        }
+      
+        to{
+          opacity:1;
+          transform:translateY(-50%);
+        }
       }
-    }
 
-    /* ===== Premium Section Divider ===== */
+/* ==================================================
+   12. Responsive
+================================================== */
 
-    .about-section,
-    .media-section,
-    .education-section,
-    .teaching-section,
-    .contact-section{
-      position:relative;
-    }
-    
-    .media-section::before,
-    .education-section::before,
-    .teaching-section::before,
-    .contact-section::before{
-    
-      content:"";
-    
-      position:absolute;
-    
-      top:0;
-    
-      left:50%;
-    
-      transform:translateX(-50%);
-    
-      width:220px;
-    
-      height:1px;
-    
-      background:
-        linear-gradient(
-          to right,
-          transparent,
-          rgba(211,180,118,.35),
-          transparent
-        );
-    }
-
-    .artist-name-en{
-      font-family:'Playfair Display', serif;
-      font-size:18px;
-      font-weight:400;
-      letter-spacing:5px;
-      color:rgba(255,255,255,.65);
-      font-style:italic;
-      margin-top:20px;
-      margin-bottom:12px;
-    }
-
-    .work-type{
-      font-family:'Montserrat',sans-serif;
-      font-size:11px;
-      letter-spacing:4px;
-      color:#d3b476;
-      margin-bottom:14px;
-    }
-      
     @media (max-width: 768px) {
       nav {
         gap: 22px;
@@ -1214,7 +1280,8 @@
         font-size: 46px;
       }
     }
-    .about-preview {
+
+.about-preview {
   background: #080808;
   color: white;
   padding: 110px 8%;
@@ -1445,21 +1512,4 @@
   }
 }
 
-/* ==========================================
-   Global Design System
-========================================== */
 
-.section-title{
-  font-family:'Noto Serif TC', serif;
-  font-size:52px;
-  font-weight:500;
-  line-height:1.2;
-  margin-bottom:30px;
-  color:#fff;
-}
-
-.section-description{
-  max-width:620px;
-  line-height:2;
-  color:rgba(255,255,255,.72);
-}
