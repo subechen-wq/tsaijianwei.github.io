@@ -219,9 +219,13 @@
    }
    
    .nav-menu a{
-     color:rgba(255,255,255,.86);
-     text-decoration:none;
-   }  
+     display:block;
+     width:100%;
+     font-size:18px;
+     letter-spacing:2px;
+     line-height:1.8;
+     white-space:nowrap;
+   }
     
     .navbar ul {
       display: flex;
