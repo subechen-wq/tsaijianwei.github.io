@@ -1107,7 +1107,7 @@
     }
     
     body.page-loaded .reveal-delay {
-      transition-delay: .35s;
+      transition-delay:.18s;
     }
     
     /* Hero 文字進場 */
