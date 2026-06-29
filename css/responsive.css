@@ -1,1 +1,14 @@
+@media(max-width:900px){
+  .featured-project-section{
+    padding:100px 8%;
+  }
 
+  .featured-project-content{
+    grid-template-columns:1fr;
+    gap:56px;
+  }
+
+  .featured-project-image img{
+    aspect-ratio:4 / 5;
+  }
+}
