@@ -311,42 +311,8 @@
   </div>
 
 </section> 
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  document.body.classList.add("page-loaded");
-
-  const navbar = document.querySelector(".navbar");
-
-  function handleNavbarScroll() {
-    if (navbar) {
-      navbar.classList.toggle("scrolled", window.scrollY > 80);
-    }
-  }
-
-  function handleReveal() {
-    const reveals = document.querySelectorAll(".reveal");
-
-    reveals.forEach(function (element) {
-      const rect = element.getBoundingClientRect();
-
-      if (rect.top < window.innerHeight * 0.72) {
-        element.classList.add("active");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", function () {
-    handleNavbarScroll();
-    handleReveal();
-  });
-
-  handleNavbarScroll();
-  handleReveal();
-
-});
-</script>
   
+<script src="script.js"></script>
+
 </body>
 </html>
