@@ -1089,26 +1089,26 @@
     }
 
     /* ===== Global Animation System ===== */
-    body:not(.page-loaded) .reveal {
-      opacity: 0;
-    }
-    
-    body.page-loaded .reveal {
-      opacity: 0 !important;
-      transform: translateY(80px) !important;
-      transition:
-        opacity 1.4s ease,
-        transform 1.4s ease;
-    }
-    
-    body.page-loaded .reveal.active {
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-    }
-    
-    body.page-loaded .reveal-delay {
-      transition-delay:.18s;
-    }
+      body:not(.page-loaded) .reveal {
+        opacity: 0;
+      }
+      
+      body.page-loaded .reveal {
+        opacity: 0 !important;
+        transform: translateY(36px) !important;
+        transition:
+          opacity 1.2s ease,
+          transform 1.2s ease;
+      }
+      
+      body.page-loaded .reveal.active {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+      
+      body.page-loaded .reveal-delay {
+        transition-delay: .18s;
+      }
     
     /* Hero 文字進場 */
     .hero-content {
