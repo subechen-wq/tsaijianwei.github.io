@@ -91,6 +91,10 @@
   .navbar{
     justify-content:space-between;
    }
+
+  .navbar ul{
+    display:none;
+  } 
    
    .nav-toggle{
      display:flex;
