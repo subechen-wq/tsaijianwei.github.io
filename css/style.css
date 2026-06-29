@@ -1444,3 +1444,33 @@
     aspect-ratio:4 / 5;
   }
 }
+
+/* ===============================
+   Global Design System
+================================ */
+
+.section-tag{
+  display:inline-block;
+  margin-bottom:18px;
+
+  font-size:13px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+
+  color:#d3b476;
+}
+
+.section-title{
+  font-family:'Noto Serif TC',serif;
+  font-size:52px;
+  line-height:1.2;
+  font-weight:500;
+
+  margin-bottom:30px;
+}
+
+.section-description{
+  max-width:620px;
+  line-height:2;
+  color:rgba(255,255,255,.72);
+}
