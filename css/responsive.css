@@ -109,6 +109,23 @@
     z-index:1002;
   }
 
+  .nav-menu{
+     padding:0 32px;
+     box-sizing:border-box;
+   }
+   
+   .nav-menu li{
+     width:100%;
+     text-align:center;
+   }
+   
+   .nav-menu a{
+     display:block;
+     font-size:18px;
+     letter-spacing:6px;
+     line-height:1.8;
+   } 
+
   .hero{
     background:
       linear-gradient(
