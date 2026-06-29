@@ -2,27 +2,21 @@
    900px
 =================================================== */
 
-@media(max-width:900px) {
-
-  .about-section {
-    display: flex;
-    align-items: center;
-    gap: 90px;
-    padding: 140px 10%;
-   }
-    
-   .about-image img {
-     margin: auto;
-   }
-    
-   .about-highlight {
-     grid-template-columns: 1fr;
-   }
-    
-}
-
-
 @media(max-width:900px){
+
+  .about-section{
+    flex-direction:column;
+    gap:56px;
+    padding:100px 8%;
+  }
+
+  .about-image img{
+    margin:auto;
+  }
+
+  .about-highlight{
+    grid-template-columns:1fr;
+  }
 
   .featured-project-section{
     padding:100px 8%;
@@ -37,12 +31,30 @@
     aspect-ratio:4 / 5;
   }
 
+  .teaching-section{
+    padding:100px 8%;
+  }
+
+  .teaching-inner{
+    grid-template-columns:1fr;
+    gap:56px;
+  }
+
+  .teaching-header h2{
+    font-size:36px;
+  }
+
+  .teaching-intro h3{
+    font-size:27px;
+  }
+
+  .teaching-item{
+    grid-template-columns:54px 1fr;
+    gap:20px;
+  }
+
 }
 
-@media(max-width:900px) {
-   .teaching-section {
-     padding: 100px 8%;
-}
 
 /* ===================================================
    768px
