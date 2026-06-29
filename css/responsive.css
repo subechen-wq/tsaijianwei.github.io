@@ -92,8 +92,41 @@
      justify-content:space-between;
    }
    
-   .navbar ul{
-     display:none;
+   .nav-menu{
+     position:fixed;
+     inset:0;
+   
+     width:100%;
+     height:100vh;
+   
+     background:rgba(3,6,12,.97);
+   
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:center;
+     gap:34px;
+   
+     opacity:0;
+     pointer-events:none;
+     transform:translateY(-12px);
+   
+     transition:
+       opacity .45s ease,
+       transform .45s ease;
+   
+     z-index:1001;
+   }
+   
+   .nav-menu.active{
+     opacity:1;
+     pointer-events:auto;
+     transform:translateY(0);
+   }
+   
+   .nav-menu a{
+     font-size:15px;
+     letter-spacing:4px;
    }
    
    .nav-toggle{
