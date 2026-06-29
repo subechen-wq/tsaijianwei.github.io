@@ -202,6 +202,26 @@
       backdrop-filter: none;
       -webkit-backdrop-filter: none;
     }
+
+    .nav-menu{
+      display:flex;
+      align-items:center;
+      gap:46px;
+   
+      list-style:none;
+      margin:0;
+      padding:0;
+   }
+   
+   .nav-menu li{
+     margin:0;
+     padding:0;
+   }
+   
+   .nav-menu a{
+     color:rgba(255,255,255,.86);
+     text-decoration:none;
+   }  
     
     .navbar ul {
       display: flex;
