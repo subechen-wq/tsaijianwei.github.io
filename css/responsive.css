@@ -88,16 +88,20 @@
     font-size:46px;
   }
 
-  .navbar{
-    justify-content:space-between;
+   .navbar{
+     justify-content:space-between;
    }
-
-  .navbar ul{
-    display:none;
-  } 
+   
+   .navbar ul{
+     display:none;
+   }
    
    .nav-toggle{
      display:flex;
+   
+     align-items:center;
+     justify-content:center;
+   
      position:relative;
      z-index:1002;
    }
@@ -140,10 +144,3 @@
 
 }
 
-@media (max-width: 768px) {
-
-  body{
-    background:red !important;
-  }
-
-}
