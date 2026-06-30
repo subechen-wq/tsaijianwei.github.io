@@ -1602,3 +1602,12 @@
         background:rgba(211,180,118,.12);
         transform:translateY(-3px);
       }
+
+      .nav-menu a.active{
+        color:#d3b476;
+      }
+      
+      .nav-menu a.active::after{
+        width:100%;
+        opacity:1;
+      }
