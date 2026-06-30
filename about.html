@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>關於蔡建緯 | Tsai Jian-Wei</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>About | 蔡建緯 Tsai Jian-Wei</title>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -13,111 +11,141 @@
 
 <body>
 
+<header class="site-header">
   <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        JWT
-        <span>FLUTIST</span>
-      </a>
-    </div>
+    <a href="index.html" class="logo">Tsai Jian-Wei</a>
 
     <ul>
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="about.html">關於</a></li>
-      <li><a href="projects.html">演出計畫</a></li>
-      <li><a href="media.html">影音作品</a></li>
-      <li><a href="teaching.html">音樂教育</a></li>
-      <li><a href="contact.html">聯絡邀約</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="performances.html">Performances</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
 
-  <main>
-      <section class="page-hero">
-        <div class="section-tag">ABOUT</div>
-        <h1>關於蔡建緯</h1>
-        <p>完整介紹頁面製作中。</p>
-      </section>
-  
-      <section class="education-section" id="education">
-      <div class="education-header">   
-        <div class="section-tag">
-          EDUCATION
-        </div>    
-        <h2 class="section-title">
-          音樂歷程
-        </h2>
-  
-      <p class="section-description">
-        德國音樂教育體系的專業養成與藝術淬鍊。
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <section class="about-page-hero">
+    <div class="about-page-inner reveal">
+      <div class="section-tag">ABOUT THE ARTIST</div>
+      <h1>關於蔡建緯</h1>
+      <p>
+        蔡建緯為旅德長笛演奏家與音樂教育者，曾接受德國音樂院最高階演奏家文憑訓練，
+        長期專注於古典長笛演奏、音色美學與音樂教育。
       </p>
-    </div> <!-- education-header -->
-    <div class="edu-item">
-  
-    <div class="edu-item">
-      <div class="edu-year">FOUNDATION</div>
-  
-      <div class="edu-content">
-        <div class="edu-location">MUSICAL FOUNDATION</div>
-        <h3>台灣音樂專業養成</h3>
-        <p>
-          奠定長笛演奏、音樂理論與舞台實踐基礎，
-          逐步建立深厚的古典音樂素養。
-        </p>
-      </div>
     </div>
-  
-    <div class="edu-item">
-      <div class="edu-year">GERMAN TRAINING</div>
-  
-      <div class="edu-content">
-        <div class="edu-location">TROSSINGEN · GERMANY</div>
-        <h3>德國國立特羅辛根高等音樂院</h3>
-  
-        <div class="school-name">
-          Staatliche Hochschule für Musik Trossingen
-        </div>
-  
-        <p>
-          於德國音樂教育體系中接受嚴謹訓練，
-          深化長笛演奏藝術、室內樂與音樂詮釋能力。
-        </p>
-      </div>
-    </div>
-  
-    <div class="edu-item featured">
-      <div class="edu-year">ARTIST DIPLOMA</div>
-  
-      <div class="edu-content">
-        <div class="edu-location">KONZERTEXAMEN</div>
-        <p>
-          完成德國音樂院最高階演奏家文憑訓練，
-          其專業地位被譽為演奏領域最高榮譽之一，
-          象徵演奏技術、藝術詮釋與舞台實踐能力的全面成熟。
-        </p>
-  
-  
-        <div class="degree">
-          Konzertexamen
-        </div>
-      </div>
-    </div>
-  
-    <div class="edu-item">
-      <div class="edu-year">PROFESSIONAL CAREER</div>
-  
-      <div class="edu-content">
-        <div class="edu-location">PERFORMANCE · RESEARCH · TEACHING</div>
-        <h3>演奏、研究與教學實踐</h3>
-        <p>
-          以德國音樂院專業訓練為基礎，
-          持續於長笛演奏、音樂教育與藝術推廣領域深耕。
-        </p>
-      </div>
-    </div>
-  
-  </div>
   </section>
-  </main>
+
+  <section class="artist-statement-section">
+    <div class="artist-statement-inner reveal">
+      <p>
+        對他而言，長笛不只是旋律的呈現，而是一種呼吸、聲音與情感之間的精密平衡。
+      </p>
+
+      <p>
+        從德國嚴謹的音樂訓練，到舞台上的細膩詮釋，他持續探索長笛音色中溫潤、清透而富有敘事性的可能。
+      </p>
+    </div>
+  </section>
+
+  <section class="formation-section">
+    <div class="formation-inner">
+
+      <div class="formation-header reveal">
+        <div class="section-tag">GERMAN FORMATION</div>
+        <h2>德國音樂院專業養成</h2>
+        <p>
+          在德國求學期間，蔡建緯接受紮實而高度專業的古典音樂訓練，
+          從演奏技巧、音色控制、樂句處理到作品詮釋，逐步建立成熟而細膩的音樂語言。
+        </p>
+      </div>
+
+      <div class="formation-grid">
+        <div class="formation-card reveal">
+          <span>01</span>
+          <h3>Konzertexamen</h3>
+          <p>最高演奏家文憑訓練</p>
+        </div>
+
+        <div class="formation-card reveal reveal-delay">
+          <span>02</span>
+          <h3>Professional Discipline</h3>
+          <p>嚴謹的聲音訓練與作品詮釋</p>
+        </div>
+
+        <div class="formation-card reveal reveal-delay">
+          <span>03</span>
+          <h3>Artistic Sensibility</h3>
+          <p>細膩、溫潤而具敘事性的音色追求</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="artist-identity-section">
+    <div class="artist-identity-inner">
+
+      <div class="identity-block reveal">
+        <div class="section-tag">PERFORMANCE</div>
+        <h2>演奏實踐</h2>
+        <p>
+          蔡建緯曾參與多場歐洲音樂院與樂團演出，並於舞台實踐中累積豐富的演奏經驗。
+          無論是獨奏、室內樂或樂團合作，他皆重視聲音的層次、音樂結構與情感表達之間的平衡。
+        </p>
+      </div>
+
+      <div class="identity-block reveal reveal-delay">
+        <div class="section-tag">TEACHING</div>
+        <h2>教學理念</h2>
+        <p>
+          在教學中，他重視的不只是技巧完成，而是幫助學生理解呼吸、音色、樂句與音樂表達之間的關係。
+          從基礎養成到升學準備，課程強調穩定訓練、清楚方法與長期音樂能力的建立。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="current-practice-section">
+    <div class="current-practice-inner reveal">
+      <div class="section-tag">CURRENT PRACTICE</div>
+      <p>
+        目前，蔡建緯活躍於演出、長笛教學與音樂推廣，持續透過舞台與教育，
+        將歐洲古典音樂訓練中的細膩、秩序與深度，轉化為台灣聽眾與學生能夠感受的音樂經驗。
+      </p>
+
+      <div class="about-page-links">
+        <a href="performances.html">觀看影音作品</a>
+        <a href="teaching.html">了解長笛課程</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h3>Tsai Jian-Wei</h3>
+      <p>Flutist · Music Educator</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="performances.html">Performances</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
