@@ -1126,7 +1126,7 @@
           #05070c;
       
         color:white;
-        padding:120px 10% 130px;
+        padding:150px 10% 170px;
         text-align:center;
         overflow:hidden;
       }
@@ -1134,7 +1134,7 @@
       .contact-inner{
         max-width:760px;
         margin:0 auto;
-        padding-top:0;
+        text-align:center;
       }
       
       .contact-section h2{
