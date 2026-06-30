@@ -1418,8 +1418,8 @@
         max-width:1240px;
         margin:0 auto;
         display:grid;
-        grid-template-columns:1fr 520px;
-        gap:90px;
+        grid-template-columns:1.05fr 500px;
+        gap:56px;
         align-items:center;
       }
       
@@ -1482,8 +1482,8 @@
       
       .artist-statement-inner p{
         font-family:'Noto Serif TC', serif;
-        font-size:clamp(23px, 2.4vw, 32px);
-        line-height:1.9;
+        font-size:clamp(21px, 2.1vw, 28px);
+        line-height:1.95;
         font-weight:500;
         color:#f3eadc;
         margin-bottom:34px;
