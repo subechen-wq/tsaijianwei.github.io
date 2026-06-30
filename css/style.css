@@ -1596,10 +1596,15 @@
         font-size:14px;
         letter-spacing:.08em;
         transition:.35s ease;
+        min-width:170px;
+        text-align:center;
+        font-family:'Montserrat', sans-serif;
       }
       
       .about-page-links a:hover{
         background:rgba(211,180,118,.12);
+        border-color:rgba(211,180,118,.58);
+        color:#f1d99a;
         transform:translateY(-3px);
       }
 
@@ -1610,4 +1615,24 @@
       .nav-menu a.active::after{
         width:100%;
         opacity:1;
+      }
+
+      .formation-card{
+        transition:
+          transform .45s ease,
+          border-color .45s ease,
+          background .45s ease,
+          box-shadow .45s ease;
+      }
+      
+      .formation-card:hover{
+        transform:translateY(-8px);
+        border-color:rgba(211,180,118,.42);
+        background:rgba(255,255,255,.04);
+        box-shadow:0 28px 70px rgba(0,0,0,.28);
+      }
+
+      .about-page .footer,
+        body.about-page .footer{
+        margin-top:0;
       }
