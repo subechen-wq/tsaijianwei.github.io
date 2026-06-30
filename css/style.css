@@ -1398,192 +1398,75 @@
         }
       }
 
-      /* =========================
-         About Page
-      ========================= */
-      
+/* =========================
+   About Page
+========================= */
+
       .about-page-hero{
-        min-height:72vh;
-        padding:180px 10% 120px;
-        background:#05070c;
+        min-height:86vh;
+        padding:150px 9% 110px;
+        background:
+          radial-gradient(
+            circle at 82% 35%,
+            rgba(211,180,118,.08),
+            transparent 34%
+          ),
+          #05070c;
         color:#fff;
         display:flex;
         align-items:center;
       }
       
-      .about-page-inner{
-        max-width:900px;
+      .about-hero-inner{
+        width:100%;
+        max-width:1240px;
+        margin:0 auto;
+        display:grid;
+        grid-template-columns:1.05fr .95fr;
+        gap:90px;
+        align-items:center;
       }
       
-      .about-page-hero h1{
+      .about-hero-text{
+        max-width:660px;
+      }
+      
+      .about-hero-text h1{
         font-family:'Noto Serif TC', serif;
-        font-size:clamp(48px, 6vw, 88px);
+        font-size:clamp(44px, 4.8vw, 68px);
         font-weight:500;
-        line-height:1.15;
+        line-height:1.18;
         color:#f5efe4;
-        margin:28px 0 34px;
+        margin:30px 0 34px;
+        letter-spacing:.02em;
       }
       
-      .about-page-hero p{
-        max-width:760px;
-        font-size:20px;
+      .about-hero-text p{
+        max-width:620px;
+        font-size:19px;
         line-height:2.1;
-        color:rgba(255,255,255,.72);
-      }
-      
-      .artist-statement-section{
-        padding:120px 10%;
-        background:#05070c;
-        color:#fff;
-      }
-      
-      .artist-statement-inner{
-        max-width:980px;
-        margin:0 auto;
-      }
-      
-      .artist-statement-inner p{
-        font-family:'Noto Serif TC', serif;
-        font-size:clamp(28px, 3.2vw, 46px);
-        line-height:1.75;
-        font-weight:500;
-        color:#f3eadc;
-        margin-bottom:34px;
-      }
-      
-      .formation-section{
-        padding:130px 10%;
-        background:#070910;
-        color:#fff;
-      }
-      
-      .formation-inner{
-        max-width:1180px;
-        margin:0 auto;
-      }
-      
-      .formation-header{
-        max-width:780px;
-        margin-bottom:70px;
-      }
-      
-      .formation-header h2{
-        font-family:'Noto Serif TC', serif;
-        font-size:42px;
-        font-weight:500;
-        margin:26px 0 24px;
-        color:#f5efe4;
-      }
-      
-      .formation-header p{
-        font-size:18px;
-        line-height:2;
         color:rgba(255,255,255,.68);
       }
       
-      .formation-grid{
-        display:grid;
-        grid-template-columns:repeat(3, 1fr);
-        gap:28px;
+      .about-hero-image{
+        position:relative;
+        width:100%;
       }
       
-      .formation-card{
-        padding:42px 34px;
-        min-height:230px;
-        border:1px solid rgba(211,180,118,.22);
-        background:rgba(255,255,255,.025);
+      .about-hero-image::before{
+        content:"";
+        position:absolute;
+        inset:24px -24px -24px 24px;
+        border:1px solid rgba(211,180,118,.25);
+        z-index:0;
       }
       
-      .formation-card span{
+      .about-hero-image img{
+        position:relative;
+        z-index:1;
+        width:100%;
+        height:560px;
+        object-fit:cover;
         display:block;
-        font-family:'Montserrat', sans-serif;
-        font-size:13px;
-        letter-spacing:.18em;
-        color:#d3b476;
-        margin-bottom:34px;
-      }
-      
-      .formation-card h3{
-        font-family:'Playfair Display', serif;
-        font-size:26px;
-        font-weight:500;
-        color:#f5efe4;
-        margin-bottom:18px;
-      }
-      
-      .formation-card p{
-        font-size:17px;
-        line-height:1.8;
-        color:rgba(255,255,255,.66);
-      }
-      
-      .artist-identity-section{
-        padding:130px 10%;
-        background:#05070c;
-        color:#fff;
-      }
-      
-      .artist-identity-inner{
-        max-width:1120px;
-        margin:0 auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:80px;
-      }
-      
-      .identity-block h2{
-        font-family:'Noto Serif TC', serif;
-        font-size:38px;
-        font-weight:500;
-        color:#f5efe4;
-        margin:26px 0 24px;
-      }
-      
-      .identity-block p{
-        font-size:18px;
-        line-height:2;
-        color:rgba(255,255,255,.68);
-      }
-      
-      .current-practice-section{
-        padding:130px 10% 150px;
-        background:#070910;
-        color:#fff;
-      }
-      
-      .current-practice-inner{
-        max-width:920px;
-        margin:0 auto;
-        text-align:center;
-      }
-      
-      .current-practice-inner p{
-        font-family:'Noto Serif TC', serif;
-        font-size:28px;
-        line-height:1.9;
-        color:#f3eadc;
-        margin:34px 0 50px;
-      }
-      
-      .about-page-links{
-        display:flex;
-        justify-content:center;
-        gap:22px;
-        flex-wrap:wrap;
-      }
-      
-      .about-page-links a{
-        display:inline-block;
-        padding:14px 26px;
-        border:1px solid rgba(211,180,118,.35);
-        color:#d3b476;
-        text-decoration:none;
-        font-size:14px;
-        letter-spacing:.08em;
-        transition:.35s ease;
-      }
-      
-      .about-page-links a:hover{
-        background:rgba(211,180,118,.12);
-        transform:translateY(-3px);
+        filter:brightness(.82) contrast(1.05) saturate(.86);
       }
