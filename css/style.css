@@ -1159,11 +1159,13 @@
     }
     
     .contact-links{
-      display:flex;
-      justify-content:center;
-      gap:18px;
-      flex-wrap:wrap;
-    }
+        display:flex;
+        justify-content:center;
+        gap:18px;
+        flex-wrap:wrap;
+      
+        margin-bottom:120px;
+      }
     
     .contact-links a{
 
