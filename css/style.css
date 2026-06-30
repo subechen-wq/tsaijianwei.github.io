@@ -1252,7 +1252,7 @@
     .footer::before{
       content:"";
       position:absolute;
-      top:0;
+      display:none;
       left:50%;
       transform:translateX(-50%);
       width:70%;
