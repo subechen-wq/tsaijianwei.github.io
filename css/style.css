@@ -227,16 +227,16 @@
      white-space:nowrap;
    }
     
-    .navbar ul {
+    .navbar .nav-menu {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 36px;
-    
+      
       list-style: none;
       margin: 0;
       padding: 0;
-    }
+   }
 
     .logo:hover {
       opacity: .82;
