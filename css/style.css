@@ -1115,57 +1115,36 @@
 =================================================== */
 
     .contact-section{
-      position:relative;
-    
-      background:
-        radial-gradient(
-          circle at center,
-          rgba(211,180,118,.04) 0%,
-          rgba(211,180,118,0) 55%
-        ),
-        #05070c;
-    
-      color:white;
-    
-      padding:160px 10% 150px;
-    
-      text-align:center;
-    
-      overflow:hidden;
-    }
-    
-    .contact-inner{
-      max-width:760px;
-      margin:auto;
-    }
-    
-    .contact-section h2{
-      font-family:'Noto Serif TC', serif;
-      position:relative;
-      font-size:52px;
-      font-weight:600;
-      letter-spacing:1px;
-      margin-bottom:32px;
-    }
-
-    .contact-section h2::after{
-      content:"";
-    
-      display:block;
-    
-      width:70px;
-      height:1px;
-    
-      margin:28px auto 0;
-    
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(211,180,118,.8),
-          transparent
-        );
-    }
+        position:relative;
+      
+        background:
+          radial-gradient(
+            circle at center,
+            rgba(211,180,118,.04) 0%,
+            rgba(211,180,118,0) 55%
+          ),
+          #05070c;
+      
+        color:white;
+        padding:120px 10% 130px;
+        text-align:center;
+        overflow:hidden;
+      }
+      
+      .contact-inner{
+        max-width:760px;
+        margin:0 auto;
+        padding-top:0;
+      }
+      
+      .contact-section h2{
+        font-family:'Noto Serif TC', serif;
+        position:relative;
+        font-size:52px;
+        font-weight:600;
+        letter-spacing:1px;
+        margin:0 0 32px;
+      }
     
     .contact-section p{
       opacity:.82;
