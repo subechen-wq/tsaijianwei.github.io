@@ -1758,3 +1758,34 @@
         line-height:1.9;
         color:rgba(255,255,255,.66);
       }
+
+      .timeline-item{
+        opacity:.28;
+        transform:translateY(22px);
+        transition:
+          opacity .8s ease,
+          transform .8s ease;
+      }
+      
+      .timeline-item.active{
+        opacity:1;
+        transform:translateY(0);
+      }
+      
+      .timeline-item::before{
+        transition:
+          transform .6s ease,
+          box-shadow .6s ease,
+          background .6s ease;
+      }
+      
+      .timeline-item.active::before{
+        transform:scale(1.18);
+        box-shadow:
+          0 0 0 10px rgba(211,180,118,.10),
+          0 0 32px rgba(211,180,118,.22);
+      }
+      
+      .timeline-list::before{
+        opacity:.75;
+      }
