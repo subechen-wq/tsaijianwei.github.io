@@ -1236,18 +1236,18 @@
 =================================================== */
 
     .footer{
-      background:
-        linear-gradient(
-          to bottom,
-          #05070c 0%,
-          #03050a 100%
-        );
-      padding:110px 10% 70px;
-      text-align:center;
-      color:white;
-      position:relative;
-      overflow:hidden;
-    }
+        background:
+          linear-gradient(
+            to bottom,
+            #05070c 0%,
+            #03050a 100%
+          );
+        padding:150px 10% 70px;
+        text-align:center;
+        color:white;
+        position:relative;
+        overflow:hidden;
+      }
     
     .footer::before{
       content:"";
