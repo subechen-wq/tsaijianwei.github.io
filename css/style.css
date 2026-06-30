@@ -1660,3 +1660,101 @@
           transparent
         );
       }
+
+      /* =========================
+         About Timeline
+      ========================= */
+      
+      .timeline-section{
+        padding:140px 8%;
+        background:#05070c;
+        color:#fff;
+      }
+      
+      .timeline-inner{
+        max-width:1120px;
+        margin:0 auto;
+      }
+      
+      .timeline-header{
+        max-width:760px;
+        margin-bottom:90px;
+      }
+      
+      .timeline-header h2{
+        font-family:'Noto Serif TC', serif;
+        font-size:40px;
+        font-weight:500;
+        color:#f5efe4;
+        margin:26px 0 24px;
+      }
+      
+      .timeline-header p{
+        font-size:17px;
+        line-height:2;
+        color:rgba(255,255,255,.66);
+      }
+      
+      .timeline-list{
+        position:relative;
+        padding-left:70px;
+      }
+      
+      .timeline-list::before{
+        content:"";
+        position:absolute;
+        left:14px;
+        top:8px;
+        bottom:8px;
+        width:1px;
+        background:linear-gradient(
+          to bottom,
+          rgba(211,180,118,.15),
+          rgba(211,180,118,.5),
+          rgba(211,180,118,.12)
+        );
+      }
+      
+      .timeline-item{
+        position:relative;
+        padding:0 0 64px;
+      }
+      
+      .timeline-item:last-child{
+        padding-bottom:0;
+      }
+      
+      .timeline-item::before{
+        content:"";
+        position:absolute;
+        left:-63px;
+        top:9px;
+        width:13px;
+        height:13px;
+        border-radius:50%;
+        background:#d3b476;
+        box-shadow:0 0 0 8px rgba(211,180,118,.08);
+      }
+      
+      .timeline-item span{
+        display:block;
+        font-family:'Montserrat', sans-serif;
+        font-size:13px;
+        letter-spacing:.18em;
+        color:#d3b476;
+        margin-bottom:16px;
+      }
+      
+      .timeline-item h3{
+        font-family:'Playfair Display', serif;
+        font-size:30px;
+        font-weight:500;
+        color:#f5efe4;
+        margin-bottom:12px;
+      }
+      
+      .timeline-item p{
+        font-size:17px;
+        line-height:1.9;
+        color:rgba(255,255,255,.66);
+      }
