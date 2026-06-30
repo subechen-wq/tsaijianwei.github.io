@@ -1133,10 +1133,10 @@
       
       .contact-inner{
         max-width:760px;
-        margin:0 auto;
+        margin:auto;
         text-align:center;
         padding-top:70px;     
-        padding-bottom:50px;
+        padding-bottom:0px;
       }
       
       .contact-section h2{
@@ -1394,8 +1394,4 @@
           opacity:1;
           transform:translateY(-50%);
         }
-      }
-
-      .contact-section{
-        padding-bottom:320px !important;
       }
