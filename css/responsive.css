@@ -79,6 +79,7 @@
      flex-direction:column;
      align-items:center;
      justify-content:center;
+     padding-top:0;
      gap:30px;
    
      list-style:none;
@@ -88,7 +89,7 @@
    
      opacity:0;
      pointer-events:none;
-     transform:translateY(-12px);
+     transform:translateY(-20px);
    
      overflow:hidden;
    
