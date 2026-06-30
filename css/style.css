@@ -1636,3 +1636,27 @@
         body.about-page .footer{
         margin-top:0;
       }
+
+      .about-page-hero,
+      .artist-statement-section,
+      .formation-section,
+      .current-practice-section{
+        position:relative;
+      }
+      
+      .artist-statement-section::before,
+      .current-practice-section::before{
+        content:"";
+        position:absolute;
+        left:50%;
+        top:0;
+        width:72%;
+        height:1px;
+        transform:translateX(-50%);
+        background:linear-gradient(
+          to right,
+          transparent,
+          rgba(211,180,118,.14),
+          transparent
+        );
+      }
