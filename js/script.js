@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Reveal Animation
   const reveals = document.querySelectorAll(".reveal");
 
   const revealObserver = new IntersectionObserver(function(entries) {
@@ -36,6 +37,26 @@ document.addEventListener("DOMContentLoaded", function () {
   reveals.forEach(function(reveal) {
     revealObserver.observe(reveal);
   });
+
+  /* ===== Timeline Animation ===== */
+
+  const timelineItems = document.querySelectorAll(".timeline-item");
+
+  const timelineObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  }, {
+    threshold: 0.35
+  });
+
+  timelineItems.forEach(function(item) {
+    timelineObserver.observe(item);
+  });
+
+  /* ============================== */
 
   handleNavbarScroll();
 
