@@ -1482,7 +1482,7 @@
       
       .artist-statement-inner p{
         font-family:'Noto Serif TC', serif;
-        font-size:clamp(26px, 3vw, 38px);
+        font-size:clamp(23px, 2.4vw, 32px);
         line-height:1.9;
         font-weight:500;
         color:#f3eadc;
