@@ -1557,36 +1557,7 @@
         color:rgba(255,255,255,.64);
       }
       
-      /* Performance + Teaching */
-      
-      .artist-identity-section{
-        padding:130px 8%;
-        background:#05070c;
-        color:#fff;
-      }
-      
-      .artist-identity-inner{
-        max-width:1120px;
-        margin:0 auto;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:90px;
-      }
-      
-      .identity-block h2{
-        font-family:'Noto Serif TC', serif;
-        font-size:38px;
-        font-weight:500;
-        color:#f5efe4;
-        margin:26px 0 24px;
-      }
-      
-      .identity-block p{
-        font-size:17px;
-        line-height:2;
-        color:rgba(255,255,255,.66);
-      }
-      
+     
       /* Current Practice */
       
       .current-practice-section{
