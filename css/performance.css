@@ -119,3 +119,69 @@
   letter-spacing:.08em;
   color:rgba(255,255,255,.58);
 }
+
+.performance-archive{
+  padding:150px 10%;
+  background:#070a10;
+}
+
+.performance-archive-inner{
+  max-width:1080px;
+  margin:0 auto;
+}
+
+.archive-header{
+  margin-bottom:80px;
+}
+
+.archive-header h2{
+  font-family:'Noto Serif TC', serif;
+  font-size:clamp(48px, 5vw, 76px);
+  font-weight:500;
+  line-height:1.2;
+  margin:42px 0 24px;
+}
+
+.archive-header p{
+  font-family:'Noto Serif TC', serif;
+  font-size:19px;
+  line-height:2;
+  color:rgba(255,255,255,.62);
+}
+
+.archive-year{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:70px;
+  padding:44px 0;
+  border-top:1px solid rgba(211,180,118,.22);
+}
+
+.archive-year:last-child{
+  border-bottom:1px solid rgba(211,180,118,.22);
+}
+
+.archive-year span{
+  font-family:'Playfair Display', serif;
+  font-size:34px;
+  color:#d3b476;
+  letter-spacing:.08em;
+}
+
+.archive-year ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.archive-year li{
+  font-family:'Noto Serif TC', serif;
+  font-size:19px;
+  line-height:2;
+  color:rgba(255,255,255,.72);
+  margin-bottom:12px;
+}
+
+.archive-year li:last-child{
+  margin-bottom:0;
+}
