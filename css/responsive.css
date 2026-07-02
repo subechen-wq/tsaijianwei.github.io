@@ -178,3 +178,138 @@
     margin-top:68px;
 }
 }
+
+@media (max-width: 768px){
+
+  html, body{
+    overflow-x:hidden;
+  }
+
+  .about-page{
+    overflow:hidden;
+  }
+
+  .about-hero,
+  .artist-statement,
+  .german-formation,
+  .professional-timeline,
+  .current-practice{
+    padding-left:8%;
+    padding-right:8%;
+  }
+
+  .about-hero{
+    min-height:auto;
+    padding-top:150px;
+    padding-bottom:90px;
+    display:block;
+  }
+
+  .about-hero-content{
+    max-width:100%;
+  }
+
+  .about-hero .section-tag{
+    font-size:13px;
+    letter-spacing:.32em;
+    margin-bottom:54px;
+  }
+
+  .about-hero h1{
+    font-size:clamp(54px, 17vw, 82px);
+    line-height:1.18;
+    writing-mode:vertical-rl;
+    letter-spacing:.05em;
+    margin-bottom:44px;
+  }
+
+  .about-hero-subtitle{
+    font-size:24px;
+    line-height:2.05;
+    max-width:260px;
+    color:rgba(255,255,255,.58);
+  }
+
+  .about-hero-image{
+    position:relative;
+    right:auto;
+    top:auto;
+    transform:none;
+    width:100%;
+    margin-top:58px;
+  }
+
+  .about-hero-image img{
+    width:100%;
+    max-width:360px;
+    margin-left:auto;
+    display:block;
+  }
+
+  .statement-inner,
+  .formation-inner,
+  .timeline-inner,
+  .practice-inner{
+    max-width:100%;
+  }
+
+  .artist-statement h2,
+  .german-formation h2,
+  .professional-timeline h2,
+  .current-practice h2{
+    font-size:clamp(38px, 11vw, 56px);
+    line-height:1.35;
+  }
+
+  .artist-statement p,
+  .current-practice p{
+    font-size:18px;
+    line-height:2.05;
+  }
+
+  .formation-grid{
+    display:flex;
+    gap:22px;
+    overflow-x:auto;
+    padding-bottom:26px;
+    scroll-snap-type:x mandatory;
+  }
+
+  .formation-card{
+    min-width:78%;
+    padding:44px 34px;
+    scroll-snap-align:start;
+  }
+
+  .formation-card h3{
+    font-size:34px;
+    line-height:1.25;
+  }
+
+  .formation-card p{
+    font-size:17px;
+    line-height:2;
+  }
+
+  .timeline-item{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:34px 0;
+  }
+
+  .timeline-year{
+    font-size:14px;
+    letter-spacing:.18em;
+  }
+
+  .timeline-content h3{
+    font-size:28px;
+    line-height:1.45;
+  }
+
+  .timeline-content p{
+    font-size:17px;
+    line-height:2;
+  }
+
+}
