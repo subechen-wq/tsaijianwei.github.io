@@ -334,3 +334,43 @@
  }
 
 }
+
+@media (max-width:768px){
+
+  html,
+  body{
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+    height:auto !important;
+    touch-action:pan-y;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  body{
+    position:relative !important;
+  }
+
+  .about-page,
+  .about-page main{
+    height:auto !important;
+    min-height:auto !important;
+    overflow:visible !important;
+  }
+
+  .about-page section{
+    overflow-x:hidden !important;
+    overflow-y:visible !important;
+  }
+
+  .about-hero{
+    height:auto !important;
+    min-height:auto !important;
+    overflow:visible !important;
+  }
+
+  .about-hero-inner{
+    height:auto !important;
+    min-height:auto !important;
+  }
+
+}
