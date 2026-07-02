@@ -326,6 +326,11 @@
    .formation-inner{
      width:100%;
      max-width:100%;
-   } 
+   }
+
+   .formation-header h2{
+     font-size:42px;
+     line-height:1.3;
+ }
 
 }
