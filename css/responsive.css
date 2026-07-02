@@ -374,3 +374,15 @@
   }
 
 }
+
+@media (max-width:768px){
+
+  .reveal,
+  .reveal-delay,
+  .timeline-item{
+    opacity:1 !important;
+    transform:none !important;
+    transition:none !important;
+  }
+
+}
