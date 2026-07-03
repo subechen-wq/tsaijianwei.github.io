@@ -1896,7 +1896,8 @@
         margin:0 auto;
         display:grid;
         grid-template-columns:repeat(2, 1fr);
-        gap:52px 44px;
+        gap:52px;
+        margin-top:80px;
       }
       
       .media-card{
