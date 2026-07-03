@@ -8,35 +8,107 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
-
+<header class="site-header">
   <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        JWT
-        <span>FLUTIST</span>
-      </a>
-    </div>
 
-    <ul>
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="about.html">關於</a></li>
-      <li><a href="projects.html">演出計畫</a></li>
-      <li><a href="media.html">影音作品</a></li>
-      <li><a href="teaching.html">音樂教育</a></li>
-      <li><a href="contact.html">聯絡邀約</a></li>
-    </ul>
-  </nav>
+  <div class="logo">
+    <a href="index.html">
+      JWT
+      <span>FLUTIST</span>
+    </a>
+  </div>
 
-  <main>
-    <section class="page-hero">
-      <div class="section-tag">CONTACT</div>
-      <h1>聯絡邀約</h1>
-      <p>完整介紹頁面製作中。</p>
+  <button class="nav-toggle" aria-label="開啟選單">
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-menu">
+    <li><a href="index.html">首頁</a></li>
+    <li><a href="about.html" class="active">關於</a></li>
+    <li><a href="projects.html">演出</a></li>
+    <li><a href="media.html">影音</a></li>
+    <li><a href="teaching.html">教學</a></li>
+    <li><a href="contact.html">聯絡</a></li>
+  </ul>
+
+</nav>
+</header>
+
+  <main class="contact-page">
+
+    <section class="contact-hero">
+      <div class="contact-hero-inner reveal">
+  
+        <span class="page-kicker">CONTACT</span>
+  
+        <h1>聯絡與合作</h1>
+  
+        <p>
+          歡迎洽詢演出邀約、長笛教學、講座合作與音樂藝術相關計畫。
+        </p>
+  
+      </div>
     </section>
+  
+    <section class="contact-info-section">
+      <div class="contact-info-inner reveal">
+  
+        <a href="mailto:yourmail@example.com" class="contact-info-card">
+          <span>Email</span>
+          <strong>yourmail@example.com</strong>
+        </a>
+  
+        <a href="#" class="contact-info-card">
+          <span>LINE</span>
+          <strong>加入 LINE 聯繫</strong>
+        </a>
+  
+        <a href="#" target="_blank" class="contact-info-card">
+          <span>Facebook</span>
+          <strong>前往 Facebook 專頁</strong>
+        </a>
+  
+      </div>
+    </section>
+  
+    <section class="contact-purpose-section">
+      <div class="contact-purpose-inner reveal">
+  
+        <div class="contact-purpose-item">
+          <span>01</span>
+          <h3>演出邀約</h3>
+          <p>獨奏、室內樂、管樂團合作與音樂會演出邀請。</p>
+        </div>
+  
+        <div class="contact-purpose-item">
+          <span>02</span>
+          <h3>長笛教學</h3>
+          <p>個別課程、升學準備、樂理試唱聽寫與演奏指導。</p>
+        </div>
+  
+        <div class="contact-purpose-item">
+          <span>03</span>
+          <h3>講座合作</h3>
+          <p>音樂講座、大師班、校園合作與藝術教育相關計畫。</p>
+        </div>
+  
+      </div>
+    </section>
+  
+    <section class="contact-closing-section">
+      <div class="contact-closing-inner reveal">
+        <p>
+          Every collaboration begins<br>
+          with a conversation.
+        </p>
+      </div>
+    </section>
+  
   </main>
 
 <script src="js/script.js"></script>
