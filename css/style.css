@@ -1972,3 +1972,27 @@
         pointer-events:none;
         user-select:none;
       }
+
+      .media-card{
+          background:#0d1017;
+          border:1px solid rgba(211,180,118,.08);
+          transition:.45s ease;
+          overflow:hidden;
+      }
+      
+      .media-card:hover{
+          transform:translateY(-8px);
+      
+          border-color:rgba(211,180,118,.22);
+      
+          box-shadow:
+          0 30px 60px rgba(0,0,0,.35);
+      }
+      
+      .media-video{
+          border-bottom:1px solid rgba(211,180,118,.12);
+      }
+      
+      .media-video iframe{
+          display:block;
+      }
