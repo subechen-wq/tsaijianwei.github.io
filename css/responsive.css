@@ -386,3 +386,50 @@
   }
 
 }
+
+  @media(max-width:900px){
+
+     .media-hero{
+       padding:150px 8% 80px;
+     }
+   
+     .media-hero h1{
+       font-size:48px;
+     }
+   
+     .media-hero p{
+       font-size:16px;
+       line-height:2;
+     }
+   
+     .featured-media-section{
+       padding:30px 8% 100px;
+     }
+   
+     .featured-media-inner{
+       grid-template-columns:1fr;
+       gap:42px;
+     }
+   
+     .featured-media-info h2{
+       font-size:34px;
+     }
+   
+     .media-archive-section{
+       padding:90px 8% 130px;
+     }
+   
+     .media-grid{
+       grid-template-columns:1fr;
+       gap:40px;
+     }
+   
+     .media-card-text{
+       padding:26px 24px 30px;
+     }
+   
+     .media-card-text h3{
+       font-size:25px;
+     }
+   
+   } 
