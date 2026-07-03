@@ -387,9 +387,21 @@
 
 }
 
+/* ===============================
+   PERFORMANCE PAGE - MOBILE
+================================ */
 @media(max-width:768px){
 
+  body{
+    overflow-x:hidden;
+  }
+
+  .performance-page{
+    overflow:hidden;
+  }
+
   .performance-hero{
+    position:relative;
     min-height:auto;
     padding:150px 8% 90px;
     overflow:hidden;
@@ -403,47 +415,61 @@
   .performance-hero-text{
     position:relative;
     z-index:2;
-    width:100%;
+    max-width:100%;
   }
 
   .performance-hero .section-tag{
-    font-size:13px;
-    letter-spacing:.28em;
-    margin-bottom:46px;
+    font-size:12px;
+    letter-spacing:.24em;
+    margin-bottom:48px;
   }
 
   .performance-hero h1{
-    font-size:56px;
+    font-size:54px;
     line-height:1.28;
-    letter-spacing:.08em;
-    margin-bottom:42px;
+    letter-spacing:.06em;
+    margin-bottom:38px;
   }
 
   .performance-hero p{
     max-width:300px;
-    font-size:20px;
-    line-height:2.35;
+    font-size:18px;
+    line-height:2.2;
     color:rgba(255,255,255,.62);
   }
 
   .performance-hero-image{
     position:absolute;
-    right:-70px;
-    top:210px;
-    width:210px;
-    height:520px;
-    opacity:.72;
+    right:-82px;
+    top:220px;
+    width:220px;
+    height:540px;
+    opacity:.7;
     z-index:1;
+    pointer-events:none;
+  }
+
+  .performance-hero-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+      to right,
+      #05070c 0%,
+      rgba(5,7,12,.2) 45%,
+      rgba(5,7,12,.9) 100%
+    );
   }
 
   .performance-hero-image img{
     width:100%;
     height:100%;
     object-fit:cover;
+    object-position:center;
   }
 
   .performance-list-section{
-    padding:90px 8% 120px;
+    padding:90px 8% 130px;
   }
 
   .performance-list{
@@ -451,26 +477,32 @@
   }
 
   .performance-item{
-    grid-template-columns:1fr;
-    gap:24px;
-    padding:44px 0;
+    display:grid;
+    grid-template-columns:96px 1fr;
+    gap:28px;
+    align-items:start;
+    padding:46px 0;
   }
 
   .performance-year{
-    font-size:36px;
+    font-size:32px;
+    line-height:1;
     letter-spacing:.12em;
+    color:#d3b476;
   }
 
   .performance-content h2{
-    font-size:32px;
+    font-size:28px;
     line-height:1.55;
+    letter-spacing:.04em;
+    margin-bottom:20px;
     word-break:keep-all;
   }
 
   .performance-content p{
-    font-size:18px;
+    font-size:16px;
     line-height:2;
-    max-width:100%;
+    color:rgba(255,255,255,.6);
   }
 
 }
