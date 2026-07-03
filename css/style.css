@@ -1961,4 +1961,5 @@
         color:rgba(255,255,255,.58);
       }
 
-      .media-hero::before{ opacity:.045; }
+      .media-hero::before{ 
+         opacity:.045; }
