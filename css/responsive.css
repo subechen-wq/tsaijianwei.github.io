@@ -593,3 +593,9 @@
      }
    
    } 
+
+   @media(max-width:768px){
+     .performance-hero{
+       border:5px solid red !important;
+     }
+   }
