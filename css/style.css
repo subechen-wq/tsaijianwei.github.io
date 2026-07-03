@@ -1916,32 +1916,47 @@
       }
       
       .media-card-text{
-        padding:30px 32px 34px;
+        padding:34px 34px 38px;
       }
       
-      .media-card-text span{
-        display:block;
+      .media-type{
+        display:inline-block;
+        margin-bottom:22px;
+      
         font-family:'Montserrat', sans-serif;
         font-size:11px;
-        letter-spacing:.2em;
-        text-transform:uppercase;
+        font-weight:500;
+        letter-spacing:.28em;
         color:#d3b476;
-        margin-bottom:16px;
       }
       
       .media-card-text h3{
         font-family:'Playfair Display', serif;
-        font-size:28px;
+        font-size:34px;
         font-weight:500;
-        margin-bottom:12px;
+        line-height:1.18;
+        color:#f5f2ec;
+        margin-bottom:16px;
+      }
+      
+      .media-work{
+        font-size:17px;
+        line-height:1.8;
+        color:rgba(255,255,255,.82);
+      }
+      
+      .media-opus{
+        margin-top:4px;
+        margin-bottom:22px;
+      
+        font-family:'Playfair Display', serif;
+        font-size:16px;
+        font-style:italic;
+        color:rgba(211,180,118,.82);
       }
       
       .media-card-text p{
         font-size:15px;
-        line-height:1.8;
+        line-height:1.9;
         color:rgba(255,255,255,.58);
-      }
-
-      .media-hero::before{
-        opacity:.045;
       }
