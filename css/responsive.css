@@ -599,3 +599,11 @@
        border:5px solid red !important;
      }
    }
+
+   @media (max-width:768px){
+
+  body{
+    background:red !important;
+  }
+
+}
