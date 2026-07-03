@@ -1960,3 +1960,5 @@
         line-height:1.9;
         color:rgba(255,255,255,.58);
       }
+
+      .media-hero::before{ opacity:.045; }
