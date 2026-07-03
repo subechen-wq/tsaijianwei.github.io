@@ -1793,11 +1793,11 @@
       .media-hero{
         position:relative;
         overflow:hidden;
-        padding:180px 10% 120px;
+        padding:150px 10% 70px;
       }
       
       .media-hero-inner{
-        max-width:760px;
+        max-width:680px;
         margin-left:0;
       }
       
@@ -1810,7 +1810,7 @@
       
       .media-hero p{
         max-width:720px;
-        font-size:18px;
+        font-size:28px;
         line-height:2.05;
       }
       
