@@ -1796,7 +1796,7 @@
       }
       
       .media-hero{
-        padding:180px 10% 110px;
+        padding:150px 10% 70px;
       }
       
       .media-hero-inner{
@@ -1819,7 +1819,7 @@
       }
       
       .featured-media-section{
-        padding:40px 10% 140px;
+        padding:20px 10% 120px;
       }
       
       .featured-media-inner{
@@ -1940,4 +1940,8 @@
         font-size:15px;
         line-height:1.8;
         color:rgba(255,255,255,.58);
+      }
+
+      .media-hero::before{
+        opacity:.045;
       }
