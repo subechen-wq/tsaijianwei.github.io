@@ -444,11 +444,11 @@
    }
    
    .page-hero p{
-     max-width:620px;
+     max-width:760px;
      font-size:18px;
      line-height:2;
      color:rgba(255,255,255,.68);
-   }  
+   }
 
 /* ===================================================
    05. About
@@ -589,13 +589,6 @@
      letter-spacing: 1px;
      margin-bottom: 24px;
    }
-   
-   .page-hero p{
-     max-width: 620px;
-     font-size: 18px;
-     line-height: 2;
-     color: rgba(255,255,255,.72);
-   } 
 
 /* ===================================================
    06. Projects
