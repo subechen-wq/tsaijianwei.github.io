@@ -414,6 +414,42 @@
       margin-bottom:12px;
     }
 
+    /* =========================
+      Phase 2 Final Polish
+      Global Page Hero Standard
+   ========================= */
+   
+   .page-hero{
+     min-height:72vh;
+     padding:180px 10% 110px;
+     display:flex;
+     align-items:flex-end;
+   }
+   
+   .page-hero-inner{
+     max-width:980px;
+   }
+   
+   .page-hero .section-tag{
+     margin-bottom:24px;
+   }
+   
+   .page-hero h1{
+     font-family:'Noto Serif TC', serif;
+     font-size:clamp(52px, 5vw, 76px);
+     font-weight:500;
+     line-height:1.18;
+     letter-spacing:.02em;
+     margin-bottom:28px;
+   }
+   
+   .page-hero p{
+     max-width:620px;
+     font-size:18px;
+     line-height:2;
+     color:rgba(255,255,255,.68);
+   }  
+
 /* ===================================================
    05. About
 =================================================== */
