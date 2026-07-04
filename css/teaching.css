@@ -235,3 +235,13 @@
   background:#d3b476;
   color:#05070c;
 }
+
+/* Final Polish - Teaching Hero Lock */
+.teaching-hero{
+  min-height:auto;
+  padding:190px 10% 150px !important;
+}
+
+.teaching-intro-section{
+  padding:120px 10% !important;
+}
