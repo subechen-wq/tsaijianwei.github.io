@@ -9,7 +9,7 @@
 }
 
 .page-hero-inner{
-  max-width:760px;
+  max-width:900px;
   margin:auto;
 }
 
@@ -32,9 +32,12 @@
 }
 
 .teaching-hero p{
-  font-size:18px;
-  line-height:2;
-  color:rgba(255,255,255,.72);
+
+    max-width:820px;
+    margin:0 auto;
+
+    font-size:18px;
+    line-height:2.1;
 }
 
 /* ===========================
