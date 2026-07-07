@@ -69,6 +69,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     /* ====================================== */
+
+  /* ===== YouTube 影片延遲載入（Lazy Load，修正 Media 頁卡頓） ===== */
+
+  const lazyVideos = document.querySelectorAll(".lazy-video");
+
+  lazyVideos.forEach(function (videoBox) {
+    videoBox.addEventListener("click", function () {
+      const videoId = videoBox.getAttribute("data-video-id");
+      const videoTitle = videoBox.getAttribute("data-title") || "YouTube video";
+
+      if (!videoId || videoBox.classList.contains("is-playing")) {
+        return;
+      }
+
+      const iframe = document.createElement("iframe");
+      iframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&rel=0";
+      iframe.title = videoTitle;
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute(
+        "allow",
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      );
+      iframe.setAttribute("allowfullscreen", "");
+
+      videoBox.appendChild(iframe);
+      videoBox.classList.add("is-playing");
+    });
+  });
+
+  /* ====================================== */
   handleNavbarScroll();
 
   window.addEventListener("scroll", handleNavbarScroll);
