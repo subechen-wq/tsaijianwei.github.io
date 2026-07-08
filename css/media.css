@@ -246,8 +246,21 @@
        line-height:2;
      
   }
+  .media-hero::before {
+       font-size:96px;
+       top:90px;
+     
+  }
   .media-archive-section {
        padding:90px 8% 130px;
+     
+  }
+  .media-archive-header {
+       margin-bottom:44px;
+     
+  }
+  .media-archive-header h2 {
+       font-size:30px;
      
   }
   .media-card-text {
@@ -256,6 +269,42 @@
   }
   .media-card-text h3 {
        font-size:25px;
+     
+  }
+  .play-button {
+       width:56px;
+       height:56px;
+     
+  }
+}
+
+@media(max-width:480px) {
+  .media-hero {
+       padding:130px 7% 60px;
+     
+  }
+  .media-hero h1 {
+       font-size:36px;
+     
+  }
+  .media-hero::before {
+       display:none;
+     
+  }
+  .media-archive-header h2 {
+       font-size:26px;
+     
+  }
+  .media-card-text {
+       padding:22px 20px 26px;
+     
+  }
+  .media-card-text h3 {
+       font-size:22px;
+     
+  }
+  .media-work {
+       font-size:15px;
      
   }
 }

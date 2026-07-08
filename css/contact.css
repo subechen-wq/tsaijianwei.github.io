@@ -131,3 +131,56 @@
 
     color:rgba(255,255,255,.92);
 }
+
+/*==================================
+  響應式（手機版，max-width:768px）
+==================================*/
+
+@media (max-width: 768px) {
+
+  .page-hero{
+    padding:140px 8% 80px;
+    min-height:auto;
+  }
+
+  .contact-purpose-section{
+    padding:60px 8% 70px;
+  }
+
+  .contact-purpose-inner{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .contact-purpose-item{
+    padding:32px 28px;
+  }
+
+  .contact-purpose-item h3{
+    font-size:24px;
+  }
+
+  .contact-links-section{
+    padding:0 8% 90px;
+  }
+
+  .contact-links-inner{
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .contact-links-inner a{
+    min-width:100%;
+  }
+
+  .contact-closing-section{
+    padding:90px 8%;
+  }
+
+  .contact-closing-inner p{
+    font-size:26px;
+    line-height:1.6;
+  }
+
+}
+
