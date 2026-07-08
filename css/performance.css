@@ -26,17 +26,18 @@
 
 .performance-hero h1{
   font-family:'Noto Serif TC', serif;
-  font-size:clamp(64px, 6vw, 96px);
-  line-height:1.15;
-  font-weight:500;
+  font-size:var(--font-hero-h1-size);
+  line-height:var(--font-hero-h1-lh);
+  letter-spacing:var(--font-hero-h1-ls);
+  font-weight:var(--font-hero-h1-weight);
   margin:48px 0 32px;
 }
 
 .performance-hero p{
   max-width:620px;
   font-family:'Noto Serif TC', serif;
-  font-size:20px;
-  line-height:2.15;
+  font-size:var(--font-hero-p-size);
+  line-height:var(--font-hero-p-lh);
   color:rgba(255,255,255,.68);
 }
 
@@ -103,17 +104,18 @@
 
 .featured-performance h2{
   font-family:'Noto Serif TC', serif;
-  font-size:clamp(44px, 4vw, 68px);
-  line-height:1.25;
-  font-weight:500;
+  font-size:var(--font-h2-size);
+  line-height:var(--font-h2-lh);
+  letter-spacing:var(--font-h2-ls);
+  font-weight:var(--font-h2-weight);
   margin-bottom:34px;
 }
 
 .featured-performance p{
   max-width:620px;
   font-family:'Noto Serif TC', serif;
-  font-size:19px;
-  line-height:2.1;
+  font-size:var(--font-body-size);
+  line-height:var(--font-body-lh);
   color:rgba(255,255,255,.68);
   margin-bottom:34px;
 }
@@ -154,16 +156,17 @@
 
 .archive-header h2{
   font-family:'Noto Serif TC', serif;
-  font-size:clamp(48px, 5vw, 76px);
-  font-weight:500;
-  line-height:1.2;
+  font-size:var(--font-h2-size);
+  font-weight:var(--font-h2-weight);
+  line-height:var(--font-h2-lh);
+  letter-spacing:var(--font-h2-ls);
   margin:42px 0 24px;
 }
 
 .archive-header p{
   font-family:'Noto Serif TC', serif;
-  font-size:19px;
-  line-height:2;
+  font-size:var(--font-body-size);
+  line-height:var(--font-body-lh);
   color:rgba(255,255,255,.62);
 }
 
@@ -217,27 +220,32 @@
 
 .performance-cta h2{
   font-family:'Noto Serif TC', serif;
-  font-size:clamp(44px, 5vw, 72px);
-  font-weight:500;
-  line-height:1.25;
+  font-size:var(--font-h2-size);
+  font-weight:var(--font-h2-weight);
+  line-height:var(--font-h2-lh);
+  letter-spacing:var(--font-h2-ls);
   margin:42px 0 28px;
 }
 
 .performance-cta p{
   font-family:'Noto Serif TC', serif;
-  font-size:19px;
-  line-height:2;
+  font-size:var(--font-body-size);
+  line-height:var(--font-body-lh);
   color:rgba(255,255,255,.62);
   margin-bottom:48px;
 }
 
 .performance-link{
   display:inline-block;
-  padding:18px 46px;
+  padding:16px 40px;
   border:1px solid rgba(211,180,118,.45);
   color:#d3b476;
   text-decoration:none;
-  letter-spacing:.12em;
+  font-family:'Montserrat', sans-serif;
+  font-size:var(--font-btn-size);
+  font-weight:var(--font-btn-weight);
+  letter-spacing:var(--font-btn-ls);
+  text-transform:uppercase;
   transition:.4s ease;
 }
 

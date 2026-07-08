@@ -29,17 +29,18 @@
 
 .about-hero-text h1 {
         font-family:'Noto Serif TC', serif;
-        font-size:clamp(44px, 4.4vw, 64px);
-        font-weight:500;
-        line-height:1.18;
+        font-size:var(--font-page-h1-size);
+        font-weight:var(--font-page-h1-weight);
+        line-height:var(--font-page-h1-lh);
+        letter-spacing:var(--font-page-h1-ls);
         color:#f5efe4;
         margin:30px 0 34px;
       }
 
 .about-hero-text p {
         max-width:620px;
-        font-size:18px;
-        line-height:2.15;
+        font-size:var(--font-hero-p-size);
+        line-height:var(--font-hero-p-lh);
         color:rgba(255,255,255,.68);
       }
 
@@ -105,15 +106,17 @@
 
 .formation-header h2 {
         font-family:'Noto Serif TC', serif;
-        font-size:40px;
-        font-weight:500;
+        font-size:var(--font-h2-size);
+        font-weight:var(--font-h2-weight);
+        line-height:var(--font-h2-lh);
+        letter-spacing:var(--font-h2-ls);
         margin:26px 0 24px;
         color:#f5efe4;
       }
 
 .formation-header p {
-        font-size:17px;
-        line-height:2;
+        font-size:var(--font-body-size);
+        line-height:var(--font-body-lh);
         color:rgba(255,255,255,.66);
       }
 
@@ -141,8 +144,9 @@
 
 .formation-card h3 {
         font-family:'Playfair Display', serif;
-        font-size:26px;
-        font-weight:500;
+        font-size:var(--font-card-title-size);
+        font-weight:var(--font-card-title-weight);
+        line-height:var(--font-card-title-lh);
         color:#f5efe4;
         margin-bottom:18px;
       }
@@ -258,15 +262,17 @@
 
 .timeline-header h2 {
         font-family:'Noto Serif TC', serif;
-        font-size:40px;
-        font-weight:500;
+        font-size:var(--font-h2-size);
+        font-weight:var(--font-h2-weight);
+        line-height:var(--font-h2-lh);
+        letter-spacing:var(--font-h2-ls);
         color:#f5efe4;
         margin:26px 0 24px;
       }
 
 .timeline-header p {
-        font-size:17px;
-        line-height:2;
+        font-size:var(--font-body-size);
+        line-height:var(--font-body-lh);
         color:rgba(255,255,255,.66);
       }
 
@@ -322,15 +328,16 @@
 
 .timeline-item h3 {
         font-family:'Playfair Display', serif;
-        font-size:30px;
-        font-weight:500;
+        font-size:var(--font-card-title-size);
+        font-weight:var(--font-card-title-weight);
+        line-height:var(--font-card-title-lh);
         color:#f5efe4;
         margin-bottom:12px;
       }
 
 .timeline-item p {
-        font-size:17px;
-        line-height:1.9;
+        font-size:var(--font-body-size);
+        line-height:var(--font-body-lh);
         color:rgba(255,255,255,.66);
       }
 

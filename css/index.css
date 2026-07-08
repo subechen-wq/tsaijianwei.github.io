@@ -6,12 +6,15 @@
 .button {    
    position:relative;
    display:inline-block;    
-   padding:15px 34px;      
+   padding:16px 40px;      
    border:1px solid rgba(211,180,118,.65);     
    color:#d3b476;   
    text-decoration:none;   
-   letter-spacing:4px;
-   font-size:12px;  
+   font-family:'Montserrat', sans-serif;
+   letter-spacing:var(--font-btn-ls);
+   font-size:var(--font-btn-size);
+   font-weight:var(--font-btn-weight);
+   text-transform:uppercase;
    overflow:hidden; 
    transition:
    transform .4s ease,
@@ -56,8 +59,9 @@
       position:relative;
       margin-top:26px;
       font-family:'Montserrat',sans-serif;
-      font-size:13px;
-      letter-spacing:.16em;
+      font-size:var(--font-btn-size);
+      letter-spacing:var(--font-btn-ls);
+      font-weight:var(--font-btn-weight);
       text-transform:uppercase;
       color:#d3b476;
       text-decoration:none;
@@ -148,11 +152,11 @@
 .hero h1 {
   font-family:'Noto Serif TC','Noto Serif CJK TC',serif;
 
-  font-size:72px;
-  font-weight:500;
+  font-size:var(--font-hero-h1-size);
+  font-weight:var(--font-hero-h1-weight);
 
-  line-height:1.08;
-  letter-spacing:3px;
+  line-height:var(--font-hero-h1-lh);
+  letter-spacing:var(--font-hero-h1-ls);
 
   margin-bottom:28px;
 }
@@ -160,10 +164,11 @@
 .hero .subtitle {
   font-family:'Montserrat',sans-serif;
 
-  font-size:13px;
+  font-size:var(--font-tag-size);
 
-  letter-spacing:6px;
+  letter-spacing:var(--font-tag-ls);
   text-transform:uppercase;
+  font-weight:var(--font-tag-weight);
 
   color:#d3b476;
 
@@ -269,18 +274,19 @@
 
 .about-content h2 {
       font-family: 'Noto Serif TC', serif;
-      font-size: 52px;
+      font-size: var(--font-h2-size);
+      font-weight: var(--font-h2-weight);
+      line-height: var(--font-h2-lh);
+      letter-spacing: var(--font-h2-ls);
       margin-bottom: 34px;
-      letter-spacing: 2px;
     }
 
 .about-content p {
       font-family: 'Noto Serif TC', serif;
-      font-size: 18px;
-      line-height: 2.15;
+      font-size: var(--font-body-size);
+      line-height: var(--font-body-lh);
       color: rgba(255,255,255,.78);
       margin-bottom: 28px;
-      letter-spacing: .3px;
     }
 
 .about-content p:last-child {
@@ -317,16 +323,17 @@
 
 .featured-project-text h2 {
   font-family:'Noto Serif TC', serif;
-  font-size:clamp(54px, 6vw, 86px);
-  font-weight:600;
-  line-height:1.1;
+  font-size:var(--font-h2-size);
+  font-weight:var(--font-h2-weight);
+  line-height:var(--font-h2-lh);
+  letter-spacing:var(--font-h2-ls);
   margin-bottom:34px;
 }
 
 .featured-project-text p {
   max-width:560px;
-  font-size:18px;
-  line-height:2.15;
+  font-size:var(--font-body-size);
+  line-height:var(--font-body-lh);
   color:rgba(255,255,255,.72);
 }
 
@@ -357,7 +364,10 @@
 
 .media-header h2 {
       font-family: 'Noto Serif TC', serif;
-      font-size: 42px;
+      font-size: var(--font-h2-size);
+      font-weight: var(--font-h2-weight);
+      line-height: var(--font-h2-lh);
+      letter-spacing: var(--font-h2-ls);
       margin-bottom: 20px;
     }
 
@@ -417,9 +427,9 @@
 
 .video-info h3 {
       font-family:'Playfair Display',serif;
-      font-size:34px;
-      line-height:1.15;
-      font-weight:600;
+      font-size:var(--font-card-title-size);
+      line-height:var(--font-card-title-lh);
+      font-weight:var(--font-card-title-weight);
       margin-bottom:20px;
     }
 
@@ -462,13 +472,16 @@
 
 .teaching-header h2 {
       font-family: 'Noto Serif TC', serif;
-      font-size: 42px;
+      font-size: var(--font-h2-size);
+      font-weight: var(--font-h2-weight);
+      line-height: var(--font-h2-lh);
+      letter-spacing: var(--font-h2-ls);
       margin-bottom: 20px;
     }
 
 .teaching-header p {
-      font-size: 17px;
-      line-height: 1.9;
+      font-size: var(--font-body-size);
+      line-height: var(--font-body-lh);
       color: rgba(255,255,255,.62);
     }
 
@@ -564,19 +577,20 @@
 .contact-section h2 {
         font-family:'Noto Serif TC', serif;
         position:relative;
-        font-size:52px;
-        font-weight:600;
-        letter-spacing:1px;
+        font-size:var(--font-h2-size);
+        font-weight:var(--font-h2-weight);
+        line-height:var(--font-h2-lh);
+        letter-spacing:var(--font-h2-ls);
         margin:0 0 32px;
         margin-bottom:26px;
       }
 
 .contact-section p {
+      font-size:var(--font-body-size);
+      line-height:var(--font-body-lh);
       opacity:.82;
       max-width:680px;
       margin:0 auto 48px;
-      line-height:2.15;
-      letter-spacing:1px;
       margin-bottom:58px;
     }
 
